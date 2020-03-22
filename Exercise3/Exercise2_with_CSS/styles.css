@@ -1,0 +1,114 @@
+body {
+    font-family: arial, serif, calibri;
+    font-size: 16px;
+    background-color: WhiteSmoke;
+    margin: 20px;
+    padding: 0;
+	border-style: ridge;
+    border-width: 1px;
+	border-color: #280000;
+}
+
+p {
+    line-height: 21px;
+	color: #280000;
+}
+
+q {
+	font-style: italic;
+}
+
+h1 {
+	font-family: serif;
+    color: #280000;
+	background-color: white;
+	box-shadow: 2.5px 4px;
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 7px;
+    padding: 4px;
+    text-align: center;
+    letter-spacing: 0.3em;;
+}
+
+h2 {
+	font-family: calibri;
+    color: #280000;
+    background-color: white;
+	box-shadow: 2.0px 3.5px;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 2px;
+    padding-left: 14px;
+}
+
+h3 {
+	font-family: calibri;
+    color: #280000;
+	background-color: white;
+	box-shadow: 1.5px 3px;
+    font-size: 1.25em;
+	padding-left: 24px;
+}
+
+h4 {
+	font-family: calibri;
+    color: #280000;
+	background-color: white;
+	box-shadow: 1px 2.5px;
+    font-size: 1.25em;
+	padding-left: 34px;
+}
+
+h5 {
+	font-family: calibri;
+    color: #280000;
+    font-size: 1.25em;
+	padding-left: 44px;
+}
+
+img {
+	border-style: ridge;
+    border-width: 1px;
+	box-shadow: 1.5px 2px;	
+	color: #280000;
+}
+
+img:hover {
+  opacity: 0.8;
+}
+
+img:active {
+  width: 960px;
+  height: 100%;
+  opacity: 1;
+}
+
+a:visited {
+    text-decoration: underline;
+	font-size: 17px;
+	color: #515130;
+}
+
+a:active {
+	text-decoration: none;
+  	font-size: 17px;
+	color: #480000;
+}
+
+a:hover {
+	text-decoration: none;
+  	font-size: 17px;
+	color: #480000;
+}
+
+a:link {
+    text-decoration: underline;
+	font-size: 17px;
+	color: #515130;
+}
+
+li {
+    color: #480000;
+    font-style: italic;
+}
