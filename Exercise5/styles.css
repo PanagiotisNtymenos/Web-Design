@@ -91,6 +91,10 @@ a:hover {
 	white-space: nowrap;
 }
 
+.no_wrap {
+	white-space: nowrap;
+}
+
 .no_border_flex-container {
 	display: flex;
 	margin: 10px;
