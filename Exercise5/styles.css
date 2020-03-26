@@ -23,9 +23,10 @@ p {
 	font-family: istosFontOpenSans;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	font-family: istosFontOpenSans;
 	text-align: center;
+	white-space: nowrap;
 }
 
 img {
@@ -88,10 +89,6 @@ a:hover {
 
 .p_menu {
 	font-family: istosFontSansastionLight;
-	white-space: nowrap;
-}
-
-.no_wrap {
 	white-space: nowrap;
 }
 
