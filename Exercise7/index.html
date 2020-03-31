@@ -5,24 +5,56 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
-	<script> document.write("<p>" + Date() + "</p>");
-		var date = new Date();
-		var hour = date.getHours();
-		if (hour < 10) {
+	<script>
 
-		} else {
+		function sayHi() {
+			var date = new Date();
+			var hour = date.getHours();
+			if (hour < 10) {
+				return "Good Morning Sunsine!!";
+			} else {
+				return "Good Day!!";
+			}
+		}
 
+		function showGIF() {
+			var img = document.getElementById("dayGIF");
+			var date = new Date();
+			var day = date.getDay();
+			var src;
+			if (day === 1) {
+				src = "days/monday.gif";
+			} else if (day === 2) {
+				src = "days/tuesday.gif";
+			} else if (day === 3) {
+				src = "days/wednesday.gif";
+			} else if (day === 4) {
+				src = "days/thursday.gif";
+			} else if (day === 5) {
+				src = "days/friday.gif";
+			} else if (day === 6) {
+				src = "days/saturday.gif";
+			} else {
+				src = "days/sunday.gif";
+			}
+			img.src = src;
 		}
 	</script>
 	<title>Marvel</title>
 </head>
 
-<body>
+<body onload="showGIF()">
 	<div class="grid-container">
 		<div class="item1" id="header">
 			<header>
 				<h1>Marvel Comic Books και Super-Hero Movies</h1>
-				<p id="p_center">Το θέμα για το οποίο επέλεξα να μιλήσω είναι η εξέλιξη των κόμικ της <q>Marvel</q> από
+				<p id="p_center" style="padding:20px">
+					<script>
+						document.write(sayHi());						
+					</script><br>
+					<img class="img_no_float" id="dayGIF" src="days/white.jpg" alt="Day Gif" height="120"><br>
+					Το θέμα για το οποίο επέλεξα να μιλήσω είναι η εξέλιξη των κόμικ
+					της <q>Marvel</q> από
 					την δημιουργία τους μέχρι και σήμερα. Ακολουθεί το πρωτότυπο κείμενο.</p>
 			</header>
 		</div>

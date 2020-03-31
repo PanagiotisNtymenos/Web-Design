@@ -54,6 +54,7 @@ h2, h3 {
 
 img {
 	float: left;
+	max-width:100%;
 	margin-right: 20px;
 	margin-bottom: 10px;
 }
@@ -126,6 +127,7 @@ a:hover {
 
 .img_no_float {
 	float: none;
+	max-width:100%;
 	margin-right: 0px;
 	margin-bottom: 10px;
 }
