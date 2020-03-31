@@ -1,77 +1,100 @@
 <!DOCTYPE html>
 <html lang="el">
-	<head>
-		<meta charset="utf-8">
-        <title>Inspect Element</title>
-        <style>
-            h1, h2 {
-                font-size:20px;
-                font-family:Calibri;
-                padding-bottom:10px;
-                color:#480000
-            }
 
-            p {
-                font-size:20px;
-                font-family:Calibri;
-                margin-left:350px;
-                margin-right:350px;
-                padding-bottom:70px
-            }
+<head>
+    <meta charset="utf-8">
+    <title>Inspect Element</title>
+    <style>
+        h1,
+        h2 {
+            font-size: 20px;
+            font-family: Calibri;
+            padding-bottom: 10px;
+            color: #480000
+        }
 
-            img {
-                padding-bottom:50px
-            }
+        p {
+            font-size: 20px;
+            font-family: Calibri;
+            margin-left: 350px;
+            margin-right: 350px;
+            padding-bottom: 70px
+        }
 
-            #p_menu {
-                font-size:20px;
-                font-family:Calibri;
-                margin-left:350px;
-                margin-right:350px;
-                padding-bottom:0px
-            }
+        img {
+            padding-bottom: 50px
+        }
 
-            #p_footer {
-                font-size:10px;
-                font-family:Calibri;
-                margin-left:350px;
-                margin-right:350px;
-                padding-bottom:0px
-            }
-        </style>
-	</head>
-	<body style="text-align:center">
-		<header>
-            <p id="p_menu">Hit the wrong Page?? Go to <i><a href="../Exercise3/Exercise1_with_CSS/index.html">Menu</a></i> Now!!</p>
-			<h1 style="font-size:40px">Inspect Element</h1>
-		</header>
-		<main>
-            <h2><i>Αρχική Σελίδα</i></h2>
-            <p>Όλες οι αλλοιώσεις έχουν σαν βάση αυτήν την σελίδα.</p>
-            <img src="screenshots/arxiko.jpg" alt="Basic Model"><br>
-            <hr>
-            <h2><i>1η Αλλαγή</i></h2>
-            <p>Στην ουσία απλά άλλαξα τα <strong>textarea</strong> σε διάφορα <strong>div</strong> της σελίδας έτσι ώστε να φαίνονται διαφορετικά τα αποτέλσματα της αναζήτησης. Είναι φανερές οι διαφορές με την προηγούμενη σελίδα. Ο κώδικας εδώ είναι αρκετά καλά δομημένος και μου ήταν αρκετά εύλκολο να εντοπίσω τα <strong>div</strong> που χρειάζομαι.</p>
-            <img src="screenshots/1.jpg" alt="First Change Image"><br>
-            <hr>
-            <h2><i>2η Αλλαγή</i></h2>
-            <p>Πείραξα τα <strong>margin-left</strong> και <strong>margin-top</strong> της σελίδας και άλλαξα το <strong>backround-color</strong>. Βρήκα ότι αυτό το κομμάτι της σελίδας (κάτω απο το search) βρίσκεται στο <strong>style</strong> με <strong>id="gstyle"</strong> και αλλοίωσα το γενικό margin (Από 7px σε 170px) και <strong>backround-color</strong> (Από λευκό σε γκρί).</p>
-            <img src="screenshots/2.jpg" alt="Second Change Image"><br>
-            <hr>
-            <h2><i>3η Αλλαγή</i></h2>
-            <p>Άλλαξα τα <strong>visited links</strong> έτσι ώστε να εμφανίζονται με κόκκινο χρώμα και άλλαξα το style της γραμματοσειράς σε Times New Roman. Πείραξα τα πεδία <strong>a:visited{}</strong> και το <strong>body{}</strong>. </p>
-            <img src="screenshots/3.jpg" alt="Third Change Image"><br>
-            <hr>
-            <h2><i>4η Αλλαγή</i></h2>
-            <p>To μέγεθος της γραμματοσειράς των <strong>h3</strong> είναι πλέον 45px και η στοίχιση του <strong>body</strong> είναι στο κέντρο. Στο <strong>style</strong> με <strong>id="gstyle"</strong> άλλαξα το <strong>font-size</strong> των <strong>h3</strong> και το <strong>text-align</strong> των αποτελεσμάτων. Τα αποτελέσματα εκφράζονται από την κλάση <strong>.g</strong> επομένως άλλαξα τα χαρακτηριστικά της.</p>
-            <img src="screenshots/4.jpg" alt="Fourth Change Image"><br>
-            <hr>
-            <h2><i>5η Αλλαγή</i></h2>
-            <p>To χρώμα του <strong>body</strong> άλλαξε σε <strong>#fff0b3</strong> (απλά με <strong><i>backround:#fff0b3</i></strong>) , για αυτό και η μπάρα αναζήτησης είναι ακόμα λευκή. Όπως βλέπετε το χρώμα του text στις "Άλλες Ερωτήσεις Χρηστών" έχει αλλλάξει με τον ίδιο τρόπο σε χρώμα <strong>#ff0066</strong>. Θα παρατηρήσετε επίσης πως έχω προσθέσει ένα <strong>padding:10px</strong> στην κλάση <strong>g</strong>, επομένως ανάμεσα στα <strong>div</strong> με <strong>class="g"</strong> (δηλ. στα αποτελέσματα της αναζήτησης) υπάρχει αυτό το φανερό κενό. Τέλος οι αλλαγές έγιναν με τέτοιο τρόπο έτσι ώστε να είναι φανερές και σίγουρα δεν προσπάθησα να βελτιστοποιήσω το αποτέλεσμα.</p>
-            <img src="screenshots/5.jpg" alt="Fifth Change Image">
-		</main>
-		<footer>
-			<br><br><br><p id="p_footer"><i>AUEB 2020</i></p>
-		</footer>
-	</body>
+        #p_menu {
+            font-size: 20px;
+            font-family: Calibri;
+            margin-left: 350px;
+            margin-right: 350px;
+            padding-bottom: 0px
+        }
+
+        #p_footer {
+            font-size: 10px;
+            font-family: Calibri;
+            margin-left: 350px;
+            margin-right: 350px;
+            padding-bottom: 0px
+        }
+    </style>
+</head>
+
+<body style="text-align:center">
+    <header>
+        <p id="p_menu">Hit the wrong Page?? Go to <i><a href="../Exercise3/Exercise1_with_CSS/index.html">Menu</a></i>
+            Now!!</p>
+        <h1 style="font-size:40px">Inspect Element</h1>
+    </header>
+    <main>
+        <h2><i>Αρχική Σελίδα</i></h2>
+        <p>Όλες οι αλλοιώσεις έχουν σαν βάση αυτήν την σελίδα.</p>
+        <img src="screenshots/arxiko.jpg" alt="Basic Model"><br>
+        <hr>
+        <h2><i>1η Αλλαγή</i></h2>
+        <p>Στην ουσία απλά άλλαξα τα <strong>textarea</strong> σε διάφορα <strong>div</strong> της σελίδας έτσι ώστε να
+            φαίνονται διαφορετικά τα αποτέλσματα της αναζήτησης. Είναι φανερές οι διαφορές με την προηγούμενη σελίδα. Ο
+            κώδικας εδώ είναι αρκετά καλά δομημένος και μου ήταν αρκετά εύλκολο να εντοπίσω τα <strong>div</strong> που
+            χρειάζομαι.</p>
+        <img src="screenshots/1.jpg" alt="First Change Image"><br>
+        <hr>
+        <h2><i>2η Αλλαγή</i></h2>
+        <p>Πείραξα τα <strong>margin-left</strong> και <strong>margin-top</strong> της σελίδας και άλλαξα το
+            <strong>backround-color</strong>. Βρήκα ότι αυτό το κομμάτι της σελίδας (κάτω απο το search) βρίσκεται στο
+            <strong>style</strong> με <strong>id="gstyle"</strong> και αλλοίωσα το γενικό margin (Από 7px σε 170px) και
+            <strong>backround-color</strong> (Από λευκό σε γκρί).</p>
+        <img src="screenshots/2.jpg" alt="Second Change Image"><br>
+        <hr>
+        <h2><i>3η Αλλαγή</i></h2>
+        <p>Άλλαξα τα <strong>visited links</strong> έτσι ώστε να εμφανίζονται με κόκκινο χρώμα και άλλαξα το style της
+            γραμματοσειράς σε Times New Roman. Πείραξα τα πεδία <strong>a:visited{}</strong> και το
+            <strong>body{}</strong>. </p>
+        <img src="screenshots/3.jpg" alt="Third Change Image"><br>
+        <hr>
+        <h2><i>4η Αλλαγή</i></h2>
+        <p>To μέγεθος της γραμματοσειράς των <strong>h3</strong> είναι πλέον 45px και η στοίχιση του
+            <strong>body</strong> είναι στο κέντρο. Στο <strong>style</strong> με <strong>id="gstyle"</strong> άλλαξα το
+            <strong>font-size</strong> των <strong>h3</strong> και το <strong>text-align</strong> των αποτελεσμάτων. Τα
+            αποτελέσματα εκφράζονται από την κλάση <strong>.g</strong> επομένως άλλαξα τα χαρακτηριστικά της.</p>
+        <img src="screenshots/4.jpg" alt="Fourth Change Image"><br>
+        <hr>
+        <h2><i>5η Αλλαγή</i></h2>
+        <p>To χρώμα του <strong>body</strong> άλλαξε σε <strong>#fff0b3</strong> (απλά με
+            <strong><i>backround:#fff0b3</i></strong>) , για αυτό και η μπάρα αναζήτησης είναι ακόμα λευκή. Όπως βλέπετε
+            το χρώμα του text στις "Άλλες Ερωτήσεις Χρηστών" έχει αλλλάξει με τον ίδιο τρόπο σε χρώμα
+            <strong>#ff0066</strong>. Θα παρατηρήσετε επίσης πως έχω προσθέσει ένα <strong>padding:10px</strong> στην
+            κλάση <strong>g</strong>, επομένως ανάμεσα στα <strong>div</strong> με <strong>class="g"</strong> (δηλ. στα
+            αποτελέσματα της αναζήτησης) υπάρχει αυτό το φανερό κενό. Τέλος οι αλλαγές έγιναν με τέτοιο τρόπο έτσι ώστε
+            να είναι φανερές και σίγουρα δεν προσπάθησα να βελτιστοποιήσω το αποτέλεσμα.</p>
+        <img src="screenshots/5.jpg" alt="Fifth Change Image">
+    </main>
+    <footer>
+        <br><br><br>
+        <p id="p_footer"><i>AUEB 2020</i></p>
+    </footer>
+</body>
+
 </html>
