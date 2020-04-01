@@ -5,15 +5,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
+	<script src="scripts.js"></script>
 	<title>Spider-Man</title>
 </head>
 
 <body>
 	<div class="grid-container">
+		<div class="item6" id="languages" style="margin-top:5px; margin-left:10px">
+			<a id="greek" href="javascript:translateSpiderMan('greek')"><img src="languages/greek.jpg" alt="Greek Flag"
+					height="11" width="16"></a>
+			<a id="english" href="javascript:translateSpiderMan('english')"><img src="languages/english.jpg"
+					alt="UK Flag" height="11" width="16"></a>
+		</div>
 		<div class="item1" id="header">
 			<header>
 				<h1>Spider-Man</h1>
-				<p id="p_center">Μια από τις πρώτες και τις πιο δημοφιλείς ταινίες της <q>Marvel</q>, βασισμένη στο
+				<p id="head_spiderman" style="text-align:center">Μια από τις πρώτες και τις πιο δημοφιλείς ταινίες της
+					<q>Marvel</q>, βασισμένη στο
 					ομώνυμο κόμικ.</p>
 			</header>
 		</div>
@@ -73,13 +81,13 @@
 			<div class="item5" id="writers">
 				<div class="no_border_flex-container">
 					<div id="plot1">
-						<h2>Πλοκή Spider-Man</h2>
-						<p>
-							<picture>
-								<source media="(min-width: 650px)" srcset="marvel/spider-man.jpg">
-								<source media="(min-width: 320px)" srcset="marvel/spider-man_mobile.jpg">
-								<img src="marvel/spider-man.jpg" alt="spider-man poster" class="responsive">
-							</picture>
+						<h2 id="sm1">Πλοκή Spider-Man</h2>
+						<picture>
+							<source media="(min-width: 650px)" srcset="marvel/spider-man.jpg">
+							<source media="(min-width: 320px)" srcset="marvel/spider-man_mobile.jpg">
+							<img src="marvel/spider-man.jpg" alt="spider-man poster" class="responsive">
+						</picture>
+						<p id="spiderman1plot">
 							Ο Πίτερ Πάρκερ ζει στο Φόρεστ Χιλς, μια ήσυχη γειτονιά της Νέας Υόρκης με το θείο του Μπεν
 							και τη θεία Μέι. Είναι κρυφά ερωτευμένος με τη Μέρι Τζέιν Γουάτσον, το όμορφο, καλόκαρδο
 							κορίτσι που μένει στο διπλανό σπίτι, αλλά είναι πολύ ντροπαλός για να την προσεγγίσει. Ο
@@ -127,13 +135,13 @@
 				</div>
 				<div class="no_border_flex-container">
 					<div id="plot2">
-						<h2>Πλοκή Spider-Man 2</h2>
-						<p>
-							<picture>
-								<source media="(min-width: 650px)" srcset="marvel/spider-man2.jpg">
-								<source media="(min-width: 320px)" srcset="marvel/spider-man2_mobile.jpg">
-								<img src="marvel/spider-man2.jpg" alt="spider-man 2 poster" class="responsive">
-							</picture>
+						<h2 id="sm2">Πλοκή Spider-Man 2</h2>
+						<picture>
+							<source media="(min-width: 650px)" srcset="marvel/spider-man2.jpg">
+							<source media="(min-width: 320px)" srcset="marvel/spider-man2_mobile.jpg">
+							<img src="marvel/spider-man2.jpg" alt="spider-man 2 poster" class="responsive">
+						</picture>
+						<p id="spiderman2plot">
 							Ο Πίτερ Πάρκερ αγωνίζεται να ισορροπήσει τα καθήκοντά του στην καταπολέμηση του εγκλήματος
 							με τις απαιτήσεις της προσωπικής του ζωής. Απολύεται από τη δουλειά του, αντιμετωπίζει
 							οικονομικές δυσκολίες και παλεύει να συνεχίσει τις σπουδές του στη φυσική στο Πανεπιστήμιο
@@ -199,13 +207,13 @@
 				</div>
 				<div class="no_border_flex-container">
 					<div id="plot3">
-						<h2>Πλοκή Spider-Man 3</h2>
-						<p>
-							<picture>
-								<source media="(min-width: 650px)" srcset="marvel/spider-man3.jpg">
-								<source media="(min-width: 320px)" srcset="marvel/spider-man3_mobile.jpg">
-								<img src="marvel/spider-man3.jpg" alt="spider-man 3 poster" class="responsive">
-							</picture>
+						<h2 id="sm3">Πλοκή Spider-Man 3</h2>
+						<picture>
+							<source media="(min-width: 650px)" srcset="marvel/spider-man3.jpg">
+							<source media="(min-width: 320px)" srcset="marvel/spider-man3_mobile.jpg">
+							<img src="marvel/spider-man3.jpg" alt="spider-man 3 poster" class="responsive">
+						</picture>
+						<p id="spiderman3plot">
 							Ο Πίτερ Πάρκερ έχει αρχίσει να αισθάνεται ασφαλής στη ζωή του και σχεδιάζει να κάνει πρόταση
 							γάμου στη Μέρι Τζέιν Γουάτσον. Ενώ ο Πίτερ και η Μέρι Τζέιν είναι σε ραντεβού, ένας μικρός
 							μετεωρίτης προσκρούει εκεί κοντά και μια εξωγήινη μάζα προσκολλάται στο μοτοποδήλατο του

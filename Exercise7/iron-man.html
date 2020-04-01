@@ -5,15 +5,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
+	<script src="scripts.js"></script>
 	<title>Iron-Man</title>
 </head>
 
 <body>
 	<div class="grid-container">
+		<div class="item6" id="languages" style="margin-top:5px; margin-left:10px">
+			<a id="greek" href="javascript:translateIronMan('greek')"><img src="languages/greek.jpg" alt="Greek Flag"
+					height="11" width="16"></a>
+			<a id="english" href="javascript:translateIronMan('english')"><img src="languages/english.jpg" alt="UK Flag"
+					height="11" width="16"></a>
+		</div>
 		<div class="item1" id="header">
 			<header>
 				<h1>Iron-Man</h1>
-				<p id="p_center">Μια από τις πρώτες και τις πιο δημοφιλείς ταινίες της <q>Marvel</q>, βασισμένη στο
+				<p id="head_ironman" style="text-align:center">Μια από τις πρώτες και τις πιο δημοφιλείς ταινίες της <q>Marvel</q>, βασισμένη στο
 					ομώνυμο κόμικ.</p>
 			</header>
 		</div>
@@ -40,7 +47,7 @@
 			<div class="item3" id="main">
 
 				<div class="no_border_flex-container" style="text-align:center;">
-					<div id="ironman1">
+					<div class="middle" id="ironman1">
 						<h2>Iron Man</h2>
 						<picture>
 							<source media="(min-width: 650px)" srcset="marvel/iron-man.jpg">
@@ -49,7 +56,7 @@
 						</picture>
 					</div>
 
-					<div id="ironman2">
+					<div class="middle" id="ironman2">
 						<h2>Iron Man 2</h2>
 						<picture>
 							<source media="(min-width: 650px)" srcset="marvel/iron-man2.jpg">
@@ -59,7 +66,7 @@
 						</picture>
 					</div>
 
-					<div id="ironman3">
+					<div class="middle" id="ironman3">
 						<h2>Iron Man 3</h2>
 						<picture>
 							<source media="(min-width: 650px)" srcset="marvel/iron-man3.jpg">
@@ -75,13 +82,13 @@
 			<div class="item5" id="writers">
 				<div class="no_border_flex-container">
 					<div id="plot1">
-						<h2>Πλοκή Iron-Man</h2>
-						<p>
-							<picture>
-								<source media="(min-width: 650px)" srcset="marvel/iron-man.jpg">
-								<source media="(min-width: 320px)" srcset="marvel/iron-man_mobile.jpg">
-								<img src="marvel/iron-man.jpg" alt="iron-man poster" class="responsive">
-							</picture>
+						<h2 id="im1">Πλοκή Iron-Man</h2>
+						<picture>
+							<source media="(min-width: 650px)" srcset="marvel/iron-man.jpg">
+							<source media="(min-width: 320px)" srcset="marvel/iron-man_mobile.jpg">
+							<img src="marvel/iron-man.jpg" alt="iron-man poster" class="responsive">
+						</picture>
+						<p id="ironman1plot">
 							Ο ιδιοφυής, δισεκατομμυριούχος, πλειμπόϊ και φιλάνθρωπος Τόνι Σταρκ, ο οποίος έχει
 							κληρονομήσει την εταιρία κατασκευής όπλων από τον πατέρα του, Χάουαρντ Σταρκ, βρίσκεται στο
 							εμπόλεμο Αφγανιστάν με τον φίλο και στρατιωτικό συνεργάτη του, Αντισυνταγματάρχη Τζέιμς
@@ -155,13 +162,13 @@
 				</div>
 				<div class="no_border_flex-container">
 					<div id="plot2">
-						<h2>Πλοκή Iron-Man 2</h2>
-						<p>
-							<picture>
-								<source media="(min-width: 650px)" srcset="marvel/iron-man2.jpg">
-								<source media="(min-width: 320px)" srcset="marvel/iron-man2_mobile.jpg">
-								<img src="marvel/iron-man2.jpg" alt="iron-man 2 poster" class="responsive">
-							</picture>
+						<h2 id="im2">Πλοκή Iron-Man 2</h2>
+						<picture>
+							<source media="(min-width: 650px)" srcset="marvel/iron-man2.jpg">
+							<source media="(min-width: 320px)" srcset="marvel/iron-man2_mobile.jpg">
+							<img src="marvel/iron-man2.jpg" alt="iron-man 2 poster" class="responsive">
+						</picture>
+						<p id="ironman2plot">
 							Στη Ρωσία, τα μίντια καλύπτουν την αποκάλυψη της ταυτότητας του Τόνι Σταρκ ως Iron Man. Ο
 							Ιβάν Βάνκο, του οποίου ο πατέρας Άντον Βάνκο έχει μόλις πεθάνει, το βλέπει αυτό και ξεκινάει
 							να φτιάχνει μια μινιατούρα αντιδραστήρα, παρόμοια με αυτή του Σταρκ. Έξι μήνες αργότερα, ο
@@ -217,13 +224,13 @@
 				</div>
 				<div class="no_border_flex-container">
 					<div id="plot3">
-						<h2>Πλοκή Iron-Man 3</h2>
-						<p>
-							<picture>
-								<source media="(min-width: 650px)" srcset="marvel/iron-man3.jpg">
-								<source media="(min-width: 320px)" srcset="marvel/iron-man3_mobile.jpg">
-								<img src="marvel/iron-man3.jpg" alt="iron-man 3 poster" class="responsive">
-							</picture>
+						<h2 id="im3">Πλοκή Iron-Man 3</h2>
+						<picture>
+							<source media="(min-width: 650px)" srcset="marvel/iron-man3.jpg">
+							<source media="(min-width: 320px)" srcset="marvel/iron-man3_mobile.jpg">
+							<img src="marvel/iron-man3.jpg" alt="iron-man 3 poster" class="responsive">
+						</picture>
+						<p id="ironman3plot">
 							Σε ένα πρωτοχρονιάτικο πάρτι το 1999, ο Τόνι Σταρκ συναντά την επιστήμονα Μάγια Χάνσεν, την
 							εφευρέτρια μιας πειραματικής αναγεννητικής θεραπείας με το όνομα Extremis, η οποία επιτρέπει
 							την αποκατάσταση τραυματισμών που επιφέρουν ακρωτηριασμό. Ένας τραυματισμένος επιστήμονας με

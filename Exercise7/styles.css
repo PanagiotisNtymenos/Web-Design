@@ -73,10 +73,12 @@ a:hover {
 .item3 { grid-area: main; }
 .item4 { grid-area: footer; }
 .item5 { grid-area: writers; }
+.item6 { grid-area: language; }
 
 .grid-container {
 	display: grid;
 	grid-template-areas:
+	'language language language language language language'
     'header header header header header header'
     'menu main main main main main'
 	'writers writers writers writers writers writers'
@@ -158,6 +160,7 @@ a:hover {
 	.grid-container {
 		display: grid;
 		grid-template-areas:
+		'language'
 		'header'
 		'menu'
 		'main'
@@ -191,6 +194,7 @@ a:hover {
 	.grid-container {
 		display: grid;
 		grid-template-areas:
+		'language'
 		'header'
 		'menu'
 		'main'
