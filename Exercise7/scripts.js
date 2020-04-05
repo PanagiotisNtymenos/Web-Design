@@ -1,8 +1,11 @@
 function sayHi() {
     var date = new Date();
     var hour = date.getHours();
-    if (hour < 10 && hour > 5) {
+    if (hour > 5 && hour < 10) {
         return "Good Morning Sunsine!!";
+    }
+    else if (hour > 1 && hour < 6) {
+        return "Well, you should get some sleep!!";
     } else {
         return "Good Day!!";
     }
@@ -29,8 +32,173 @@ function showGIF() {
         src = "days/sunday.gif";
     }
     img.src = src;
+}
+
+var nm = 0;
 
 
+function nightMODEindex() {
+    document.getElementById("link").style.color = "#780000";
+    document.getElementById("link1").style.color = "#780000";
+    document.getElementById("link2").style.color = "#780000";
+    document.getElementById("link3").style.color = "#780000";
+    document.getElementById("link4").style.color = "#780000";
+    document.getElementById("link5").style.color = "#780000";
+    document.getElementById("link6").style.color = "#780000";
+    document.querySelector("body").style.backgroundColor = "#0d0d0d";
+    document.querySelector("body").style.borderColor = "WhiteSmoke";
+    document.querySelector("body").style.color = "WhiteSmoke";
+    document.querySelector("body").style.boxShadow = "2px 2.5px 5px 2.5px";
+    document.querySelector("p").style.color = "WhiteSmoke";
+    document.querySelector("p").style.backgroundColor = "#0d0d0d";
+    document.querySelector("h1").style.color = "WhiteSmoke";
+    document.querySelector("h2").style.color = "WhiteSmoke";
+    document.querySelector("div").style.color = "WhiteSmoke";
+    document.querySelector("div").style.backgroundColor = "#0d0d0d";
+    document.querySelector(".no_border_flex-container").style.backgroundColor = "#0d0d0d";
+    document.getElementById("Super-Hero_Movies").style.backgroundColor = "#0d0d0d";
+    document.getElementById("Marvel_Comics").style.backgroundColor = "#0d0d0d";
+    document.getElementById("Stan_Lee").style.backgroundColor = "#0d0d0d";
+    document.getElementById("Jack_Kirby").style.backgroundColor = "#0d0d0d";
+    document.getElementById("Steve_Ditko").style.backgroundColor = "#0d0d0d";
+    document.getElementById("Marvel").style.backgroundColor = "#0d0d0d";
+    document.getElementById("menu").style.backgroundColor = "#0d0d0d";
+}
+
+function normalMODEindex() {
+    document.getElementById("link").style.color = "#280000";
+    document.getElementById("link1").style.color = "#280000";
+    document.getElementById("link2").style.color = "#280000";
+    document.getElementById("link3").style.color = "#280000";
+    document.getElementById("link4").style.color = "#280000";
+    document.getElementById("link5").style.color = "#280000";
+    document.getElementById("link6").style.color = "#280000";
+    document.querySelector("body").style.backgroundColor = "WhiteSmoke";
+    document.querySelector("body").style.borderColor = "#280000";
+    document.querySelector("body").style.color = "#280000";
+    document.querySelector("body").style.boxShadow = "2px 2.5px 5px 2.5px";
+    document.querySelector("p").style.color = "#280000";
+    document.querySelector("p").style.backgroundColor = "WhiteSmoke";
+    document.querySelector("h1").style.color = "#280000";
+    document.querySelector("h2").style.color = "#280000";
+    document.querySelector("div").style.color = "#280000";
+    document.querySelector("div").style.backgroundColor = "WhiteSmoke";
+    document.querySelector(".no_border_flex-container").style.backgroundColor = "WhiteSmoke";
+    document.getElementById("Super-Hero_Movies").style.backgroundColor = "WhiteSmoke";
+    document.getElementById("Marvel_Comics").style.backgroundColor = "WhiteSmoke";
+    document.getElementById("Stan_Lee").style.backgroundColor = "WhiteSmoke";
+    document.getElementById("Jack_Kirby").style.backgroundColor = "WhiteSmoke";
+    document.getElementById("Steve_Ditko").style.backgroundColor = "WhiteSmoke";
+    document.getElementById("Marvel").style.backgroundColor = "WhiteSmoke";
+    document.getElementById("menu").style.backgroundColor = "WhiteSmoke";
+}
+
+function nightMODEironMan() {
+    document.getElementById("link").style.color = "#780000";
+    document.getElementById("link1").style.color = "#780000";
+    document.getElementById("link2").style.color = "#780000";
+    document.getElementById("link3").style.color = "#780000";
+    document.getElementById("link4").style.color = "#780000";
+    document.getElementById("link5").style.color = "#780000";
+    document.querySelector("body").style.backgroundColor = "#0d0d0d";
+    document.querySelector("body").style.borderColor = "WhiteSmoke";
+    document.querySelector("body").style.color = "WhiteSmoke";
+    document.querySelector("body").style.boxShadow = "2px 2.5px 5px 2.5px";
+    document.querySelector("p").style.color = "WhiteSmoke";
+    document.querySelector("p").style.backgroundColor = "#0d0d0d";
+    document.querySelector("h1").style.color = "WhiteSmoke";
+    document.querySelector("h2").style.color = "WhiteSmoke";
+    document.querySelector("div").style.color = "WhiteSmoke";
+    document.querySelector("div").style.backgroundColor = "#0d0d0d";
+    document.querySelector(".no_border_flex-container").style.backgroundColor = "#0d0d0d";
+    document.getElementById("ironman1").style.backgroundColor = "#0d0d0d";
+    document.getElementById("ironman2").style.backgroundColor = "#0d0d0d";
+    document.getElementById("ironman3").style.backgroundColor = "#0d0d0d";
+    document.getElementById("menu").style.backgroundColor = "#0d0d0d";
+    document.getElementById("plot1").style.backgroundColor = "#0d0d0d";
+    document.getElementById("plot2").style.backgroundColor = "#0d0d0d";
+    document.getElementById("plot3").style.backgroundColor = "#0d0d0d";
+}
+
+function normalMODEironMan() {
+    document.getElementById("link").style.color = "#280000";
+    document.getElementById("link1").style.color = "#280000";
+    document.getElementById("link2").style.color = "#280000";
+    document.getElementById("link3").style.color = "#280000";
+    document.getElementById("link4").style.color = "#280000";
+    document.getElementById("link5").style.color = "#280000";
+    document.querySelector("body").style.backgroundColor = "WhiteSmoke";
+    document.querySelector("body").style.borderColor = "#280000";
+    document.querySelector("body").style.color = "#280000";
+    document.querySelector("body").style.boxShadow = "2px 2.5px 5px 2.5px";
+    document.querySelector("p").style.color = "#280000";
+    document.querySelector("p").style.backgroundColor = "WhiteSmoke";
+    document.querySelector("h1").style.color = "#280000";
+    document.querySelector("h2").style.color = "#280000";
+    document.querySelector("div").style.color = "#280000";
+    document.querySelector("div").style.backgroundColor = "WhiteSmoke";
+    document.querySelector(".no_border_flex-container").style.backgroundColor = "WhiteSmoke";
+    document.getElementById("ironman1").style.backgroundColor = "WhiteSmoke";
+    document.getElementById("ironman2").style.backgroundColor = "WhiteSmoke";
+    document.getElementById("ironman3").style.backgroundColor = "WhiteSmoke";
+    document.getElementById("plot1").style.backgroundColor = "WhiteSmoke";
+    document.getElementById("plot2").style.backgroundColor = "WhiteSmoke";
+    document.getElementById("plot3").style.backgroundColor = "WhiteSmoke";
+    document.getElementById("menu").style.backgroundColor = "WhiteSmoke";
+}
+
+function nightMODEspiderMan() {
+    document.getElementById("link").style.color = "#780000";
+    document.getElementById("link1").style.color = "#780000";
+    document.getElementById("link2").style.color = "#780000";
+    document.getElementById("link3").style.color = "#780000";
+    document.getElementById("link4").style.color = "#780000";
+    document.getElementById("link5").style.color = "#780000";
+    document.querySelector("body").style.backgroundColor = "#0d0d0d";
+    document.querySelector("body").style.borderColor = "WhiteSmoke";
+    document.querySelector("body").style.color = "WhiteSmoke";
+    document.querySelector("body").style.boxShadow = "2px 2.5px 5px 2.5px";
+    document.querySelector("p").style.color = "WhiteSmoke";
+    document.querySelector("p").style.backgroundColor = "#0d0d0d";
+    document.querySelector("h1").style.color = "WhiteSmoke";
+    document.querySelector("h2").style.color = "WhiteSmoke";
+    document.querySelector("div").style.color = "WhiteSmoke";
+    document.querySelector("div").style.backgroundColor = "#0d0d0d";
+    document.querySelector(".no_border_flex-container").style.backgroundColor = "#0d0d0d";
+    document.getElementById("spiderman1").style.backgroundColor = "#0d0d0d";
+    document.getElementById("spiderman2").style.backgroundColor = "#0d0d0d";
+    document.getElementById("spiderman3").style.backgroundColor = "#0d0d0d";
+    document.getElementById("menu").style.backgroundColor = "#0d0d0d";
+    document.getElementById("plot1").style.backgroundColor = "#0d0d0d";
+    document.getElementById("plot2").style.backgroundColor = "#0d0d0d";
+    document.getElementById("plot3").style.backgroundColor = "#0d0d0d";
+}
+
+function normalMODEspiderMan() {
+    document.getElementById("link").style.color = "#280000";
+    document.getElementById("link1").style.color = "#280000";
+    document.getElementById("link2").style.color = "#280000";
+    document.getElementById("link3").style.color = "#280000";
+    document.getElementById("link4").style.color = "#280000";
+    document.getElementById("link5").style.color = "#280000";
+    document.querySelector("body").style.backgroundColor = "WhiteSmoke";
+    document.querySelector("body").style.borderColor = "#280000";
+    document.querySelector("body").style.color = "#280000";
+    document.querySelector("body").style.boxShadow = "2px 2.5px 5px 2.5px";
+    document.querySelector("p").style.color = "#280000";
+    document.querySelector("p").style.backgroundColor = "WhiteSmoke";
+    document.querySelector("h1").style.color = "#280000";
+    document.querySelector("h2").style.color = "#280000";
+    document.querySelector("div").style.color = "#280000";
+    document.querySelector("div").style.backgroundColor = "WhiteSmoke";
+    document.querySelector(".no_border_flex-container").style.backgroundColor = "WhiteSmoke";
+    document.getElementById("spiderman1").style.backgroundColor = "WhiteSmoke";
+    document.getElementById("spiderman2").style.backgroundColor = "WhiteSmoke";
+    document.getElementById("spiderman3").style.backgroundColor = "WhiteSmoke";
+    document.getElementById("plot1").style.backgroundColor = "WhiteSmoke";
+    document.getElementById("plot2").style.backgroundColor = "WhiteSmoke";
+    document.getElementById("plot3").style.backgroundColor = "WhiteSmoke";
+    document.getElementById("menu").style.backgroundColor = "WhiteSmoke";
 }
 
 function translateIndex(language) {
