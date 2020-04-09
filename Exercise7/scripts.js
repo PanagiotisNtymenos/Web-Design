@@ -1,14 +1,20 @@
 function sayHi() {
     var date = new Date();
     var hour = date.getHours();
+    var whatToSay;
+    function sayTime() {
+        whatToSay = "You entered the page in " + hour + ":" + date.getMinutes() + "! Enjoy your reading!!";
+    }
+    sayTime();
     if (hour > 5 && hour < 10) {
-        return "Good Morning Sunsine!!";
+        whatToSay = "Good Morning Sunsine!! " + whatToSay;
     }
     else if (hour > 1 && hour < 6) {
-        return "Well, you should get some sleep!!";
+        whatToSay = "Well, you should get some sleep!! " + whatToSay;
     } else {
-        return "Good Day!!";
+        whatToSay = "Good Day!! " + whatToSay;
     }
+    return whatToSay;
 }
 
 function showGIF() {
