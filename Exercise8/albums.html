@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="index/icon.png">
+	<script src="scripts.js"></script>
+	<title>Albums</title>
+</head>
+
+<body>
+	<div class="grid-container">
+		<div class="item1">
+			<div id="sizes" style="margin-top:5px; margin-left:10px; text-align:left">
+				<a href="#" onClick="fontSize('small');"><img id="small_letters" src="letters/letterAsmall.png"
+						alt="Small Size" height="25" width="25"></a>
+
+				<a href="#" onClick="fontSize('normal');"><img id="normal_letters" src="letters/letterAActive.png"
+						alt="Normal Size" height="25" width="25"></a>
+
+				<a href="#" onClick="fontSize('big');"><img id="big_letters" src="letters/letterAbig.png" alt="Big Size"
+						height="25" width="25"></a>
+			</div>
+		</div>
+		<div class="item2" style="text-align:center;">
+			<div id="header">
+				<header>
+					<h1>Άλμπουμ</h1>
+					<p id="p1" style="margin-left: 50px; margin-right: 50px;">Σε αυτή την σελίδα θα ήθελα να παρουσιάσω
+						μερικούς δίσκους με τους οποίους έχω μεγαλώσει αλλά ακούω ακόμα και σήμερα. Κάποιοι είναι
+						διαχρονικοί και κάποιοι ιδιαίτεροι. Θα υπάρχει και η επιλογή να ακούσετε και ένα απόσπασμα από
+						το αγαπημένο μου τραγούδι σε κάθε δίσκο. Για άλλη μια φορά θα χωρίσω σε δύο κατηγορίες,
+						Ελληνικοί και Ξένοι.</p>
+				</header>
+			</div>
+		</div>
+
+		<div class="item3" id="main">
+			<div class="flex-container">
+
+				<div class="middle">
+					<h2>Ελληνικοί</h2>
+					<div class="flex-container">
+						<div id="ayto_to_ploio" class="middle">
+							<picture>
+								<source media="(min-width: 768px)" srcset="albums/ayto_to_ploio.jpg">
+								<source media="(min-width: 320px)" srcset="albums/ayto_to_ploio_mobile.jpg">
+								<img src="albums/ayto_to_ploio.jpg" alt="Ayto to Ploio pou Olo Ftanei"
+									class="responsive">
+							</picture>
+							<h3>Αυτό το Πλοίο που όλο Φτάνει</h3><br>
+							<h4>Καλλιτέχνης: Παύλος Παυλίδης</h4>
+						</div>
+					</div>
+
+					<div class="flex-container">
+						<div id="rous_2" class="middle">
+							<picture>
+								<source media="(min-width: 768px)" srcset="albums/rous2.jpg">
+								<source media="(min-width: 320px)" srcset="albums/rous2_mobile.jpg">
+								<img src="albums/rous2.jpg" alt="Rous 2" class="responsive">
+							</picture>
+							<h3>Ρους ΙΙ</h3><br>
+							<h4>Καλλιτέχνης: Ρους</h4>
+						</div>
+					</div>
+
+					<div class="flex-container">
+						<div id="16" class="middle">
+							<picture>
+								<source media="(min-width: 768px)" srcset="albums/16.jpg">
+								<source media="(min-width: 320px)" srcset="albums/16_mobile.jpg">
+								<img src="albums/16.jpg" alt="16" class="responsive">
+							</picture>
+							<h3>16</h3><br>
+							<h4>Καλλιτέχνης: Σπύρος Γραμμένος</h4>
+						</div>
+					</div>
+
+					<div class="flex-container">
+						<div id="mikrh_valitsa" class="middle">
+							<picture>
+								<source media="(min-width: 768px)" srcset="albums/mikrh_valitsa.jpg">
+								<source media="(min-width: 320px)" srcset="albums/mikrh_valitsa_mobile.jpg">
+								<img src="albums/mikrh_valitsa.jpg" alt="Mikrh Valitsa" class="responsive">
+							</picture>
+							<h3>Μικρή Βαλίτσα</h3><br>
+							<h4>Καλλιτέχνης: Αλκίνοος Ιωαννίδης</h4>
+						</div>
+					</div>
+
+					<div class="flex-container">
+						<div id="egine_i_apolia" class="middle">
+							<picture>
+								<source media="(min-width: 768px)" srcset="albums/egine_i_apolia.jpg">
+								<source media="(min-width: 320px)" srcset="albums/egine_i_apolia_mobile.jpg">
+								<img src="albums/egine_i_apolia.jpg" alt="Egine h Apoleia Synhtheia mas" class="responsive">
+							</picture>
+							<h3>Έγινε η Απώλεια Συνήθειά μας</h3><br>
+							<h4>Καλλιτέχνης: Διάφανα Κρίνα</h4>
+						</div>
+					</div>
+
+					
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+				<div class="middle">
+					<h2>Ξένοι</h2>
+					<div class="flex-container">
+						<div id="continuum" class="middle">
+							<picture>
+								<source media="(min-width: 768px)" srcset="albums/continuum.jpg">
+								<source media="(min-width: 320px)" srcset="albums/continuum_mobile.jpg">
+								<img src="albums/continuum.jpg" alt="Continuum"
+									class="responsive">
+							</picture>
+							<h3>Continuum</h3><br>
+							<h4>Καλλιτέχνης: John Mayer</h4>
+						</div>
+					</div>
+
+					<div class="flex-container">
+						<div id="plus" class="middle">
+							<picture>
+								<source media="(min-width: 768px)" srcset="albums/plus.jpg">
+								<source media="(min-width: 320px)" srcset="albums/plus_mobile.jpg">
+								<img src="albums/plus.jpg" alt="Plus" class="responsive">
+							</picture>
+							<h3>Plus (+)</h3><br>
+							<h4>Καλλιτέχνης: Ed Sheeran</h4>
+						</div>
+					</div>
+
+					<div class="flex-container">
+						<div id="ram" class="middle">
+							<picture>
+								<source media="(min-width: 768px)" srcset="albums/ram.jpg">
+								<source media="(min-width: 320px)" srcset="albums/ram_mobile.jpg">
+								<img src="albums/ram.jpg" alt="Random Access Memories" class="responsive">
+							</picture>
+							<h3>Random Access Memories</h3><br>
+							<h4>Καλλιτέχνης: Daft Punk</h4>
+						</div>
+					</div>
+
+					<div class="flex-container">
+						<div id="battle_studies" class="middle">
+							<picture>
+								<source media="(min-width: 768px)" srcset="albums/battle_studies.jpg">
+								<source media="(min-width: 320px)" srcset="albums/battle_studies_mobile.jpg">
+								<img src="albums/battle_studies.jpg" alt="Battle Studies" class="responsive">
+							</picture>
+							<h3>Battle Studies</h3><br>
+							<h4>Καλλιτέχνης: John Mayer</h4>
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>
+		</div>
+
+		<div class="flex-container">
+			<div class="item4 middle" id="menu">
+				<h2 style="color: #931f1f; margin-left: 15px; margin-right: 15px;">Menu</h2><br>
+
+				<div class="p_menu"><a href="../Exercise3/Exercise1_with_CSS/index.html">
+						<div class="center">Αρχική</div>
+					</a></div>
+
+				<div class="p_menu"><a class="center" href="index.html">
+						<div class="center">Μουσική</div>
+					</a></div>
+
+				<div class="p_menu"><a class="center" href="artists.html">
+						<div class="center">Καλλιτέχνες</div>
+					</a></div>
+
+			</div>
+		</div>
+
+
+
+
+		<div class="item5" id="footer">
+			<footer>
+				<p style="text-align:center;font-size:50%; color: #931f1f;">Panayots 2020 &#169; &#9835;</p>
+			</footer>
+		</div>
+
+	</div>
+</body>
+
+</html>
