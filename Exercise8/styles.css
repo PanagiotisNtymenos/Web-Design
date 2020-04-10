@@ -47,6 +47,10 @@ h4 {
 	text-align: center;
 }
 
+audio {
+	color: #931f1f;
+}
+
 .nowrap {
 	overflow: auto;
 	white-space: nowrap;
@@ -54,6 +58,7 @@ h4 {
 
 img {
 	max-width:100%;
+	margin-right: 5px;
 	float: left;
 }
 
@@ -71,11 +76,16 @@ a:hover {
 	color: #931f1f;
 }
 
-.item1 { grid-area: sizes; }
-.item2 { grid-area: header; }
-.item3 { grid-area: main; }
-.item4 { grid-area: menu; }
-.item5 { grid-area: footer; }
+.item1 { 
+	grid-area: sizes; }
+.item2 { 
+	grid-area: header; }
+.item3 { 
+	grid-area: main; }
+.item4 { 
+	grid-area: menu; }
+.item5 { 
+	grid-area: footer; }
 
 .grid-container {
 	display: grid;
@@ -84,7 +94,6 @@ a:hover {
     'header header header header header header'
 	'menu main main main main main'
     'footer footer footer footer footer footer';
-	grid-gap: 5px;
 	grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr;
 }
 
@@ -139,7 +148,8 @@ a:hover {
 	white-space: nowrap;
 	text-decoration: none;
 	text-align: center;
-	height : 50px;
+	padding:1px;
+
 }
 
 .p_menu:hover {
@@ -156,10 +166,6 @@ a:hover {
 	height:auto;
 }
 
-.responsive_footer {
-	max-width: 90%;
-	height:auto;
-}
 
 @media only screen and (max-width: 768px) {
 	/* For mobile phones: */
@@ -192,7 +198,13 @@ a:hover {
 		'year'
 		'play';
 		grid-template-columns: minmax(0, 1fr);
-	}	
+	}
+	
+	#clock {
+		text-align: center;
+		margin-right: 0px;
+		margin-top: 0px;
+	}
 
 	.MAX_responsive {
 		float: none;
@@ -218,11 +230,28 @@ a:hover {
 		grid-template-columns: minmax(0, 1fr);
 	}
 
-	.no_border_flex-container {
-		display: flex;
-		margin: 15px;
-		padding: 15px;
-		border-color: #280000;
-		box-shadow: 1px 1.5px 2.5px 1.5px;
+}
+
+@media only screen and (max-width: 1200px) {
+	/* For smaller PC screens: */
+
+	.grid-cont {
+		display: grid;
+		grid-template-areas:
+		'photo'
+		'title'
+		'artist'  
+		'year'
+		'play';
+		grid-template-columns: minmax(0, 1fr);
+	}	
+
+	.MAX_responsive {
+		max-width: 50%;
+		float: none;
+	}
+
+	audio {
+		max-width: 100%;
 	}
 }

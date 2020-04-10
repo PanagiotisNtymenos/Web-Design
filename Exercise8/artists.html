@@ -10,7 +10,7 @@
 	<title>Artists</title>
 </head>
 
-<body>
+<body onload="date()">
 	<div class="grid-container">
 		<div class="item1">
 			<div id="sizes" style="margin-top:5px; margin-left:10px; text-align:left">
@@ -22,6 +22,10 @@
 
 				<a href="#" onClick="fontSize('big');"><img id="big_letters" src="letters/letterAbig.png" alt="Big Size"
 						height="25" width="25"></a>
+			</div>
+			<div id="showClock" style="margin-top:5px; margin-right:10px; text-align:right">
+				<p id="date">Here is Date!</p>
+				<p id="clock">Here is Time!</p>
 			</div>
 		</div>
 		<div class="item2" style="text-align:center;">
