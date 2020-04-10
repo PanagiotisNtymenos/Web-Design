@@ -40,9 +40,6 @@ function showGIF() {
     img.src = src;
 }
 
-var nm = 0;
-
-
 function nightMODEindex() {
     document.getElementById("link").style.color = "#780000";
     document.getElementById("link1").style.color = "#780000";
