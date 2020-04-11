@@ -83,7 +83,7 @@ function date() {
     document.getElementById("date").style.color = "#931f1f";
     date = new Date();
     document.getElementById("clock").innerHTML = date.toLocaleTimeString();
-    var myVar = setInterval(function () { clock() }, 1000);
+    var run = setInterval(function () { clock() }, 1000);
 
     function clock() {
         date = new Date();
