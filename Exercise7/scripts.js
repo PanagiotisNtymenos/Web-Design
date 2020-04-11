@@ -2,19 +2,24 @@ function sayHi() {
     var date = new Date();
     var hour = date.getHours();
     var whatToSay;
-    function sayTime() {
-        whatToSay = "You entered the page in " + hour + ":" + date.getMinutes() + "! Enjoy your reading!!";
-    }
-    sayTime();
     if (hour > 5 && hour < 10) {
-        whatToSay = "Good Morning Sunsine!! " + whatToSay;
+        whatToSay = "Good Morning Sunsine!! ";
     }
     else if (hour > 1 && hour < 6) {
-        whatToSay = "Well, you should get some sleep!! " + whatToSay;
+        whatToSay = "Well, you should get some sleep!! ";
     } else {
-        whatToSay = "Good Day!! " + whatToSay;
+        whatToSay = "Good Day!! ";
     }
-    return whatToSay;
+    document.getElementById("Hi!").innerHTML = whatToSay;
+
+    date = new Date();
+    document.getElementById("showTime").innerHTML = date.toLocaleTimeString();
+    var run = setInterval(function () { clock() }, 1000);
+
+    function clock() {
+        date = new Date();
+        document.getElementById("showTime").innerHTML = date.toLocaleTimeString();
+    }
 }
 
 function showGIF() {

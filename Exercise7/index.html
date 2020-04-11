@@ -10,7 +10,7 @@
 
 </head>
 
-<body onload="showGIF()">
+<body onload="showGIF(); sayHi();">
 	<div class="grid-container">
 		<div class="item6" id="languages" style="margin-top:5px; margin-left:10px; text-align:left">
 			<a id="greek" href="javascript:translateIndex('greek')"><img src="languages/greek.jpg" alt="Greek Flag"
@@ -25,6 +25,7 @@
 			<a style="margin-top:5px; margin-left:10px; text-align:right" id="normal_mode"
 				href="javascript:normalMODEindex()"><img src="mode/normalmode.png" alt="Normal Mode" height="15"
 					width="15"></a>
+			<div id="showTime" style="margin-right:5px; text-align:right">Time!!!!</div>
 
 		</div>
 
@@ -32,11 +33,7 @@
 			<header>
 				<h1>Marvel Comic Books και Super-Hero Movies</h1>
 				<div style="padding:20px; text-align:center">
-					<p>
-						<script>
-							document.write(sayHi());
-						</script>
-					</p><br><br>
+					<p id="Hi!">Say Hi Here!!</p><br>
 					<img class="img_no_float" id="dayGIF" src="days/default.jpg" alt="Day Gif" height="120"><br>
 				</div>
 				<p id="head_index" style="padding:10px; text-align:center">
