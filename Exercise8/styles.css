@@ -45,6 +45,7 @@ h3 {
 h4 {
 	font-family: CaviarDreams;
 	text-align: center;
+	white-space: nowrap;
 }
 
 audio {
@@ -168,7 +169,7 @@ a:hover {
 	white-space: nowrap;
 	text-decoration: none;
 	text-align: center;
-	padding:1px;
+	padding:5px;
 
 }
 
