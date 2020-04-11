@@ -71,6 +71,7 @@ img:hover {
 .hoverMe:hover {
 	transform: scale(0.99);
 	transition: 0.5s;
+	transform-style: initial;
 }
 
 .hoverMeHard:hover {
