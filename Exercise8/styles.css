@@ -45,7 +45,6 @@ h3 {
 h4 {
 	font-family: CaviarDreams;
 	text-align: center;
-	white-space: nowrap;
 }
 
 audio {
@@ -166,7 +165,7 @@ a:hover {
 
 
 .img-container {
-	max-width: 80%;
+	max-width: 70%;
 	height: auto;
 	position: relative;
 	margin: auto;
@@ -316,6 +315,9 @@ a:hover {
 		max-width: 100%;
 	}
 
+	.img-container {
+		max-width: 100%;
+	}
 }
 
 @media only screen and (max-width: 1025px) {
@@ -359,5 +361,9 @@ a:hover {
 
 	.p_menu:hover {
 		background: white 0%;
+	}
+
+	.img-container {
+		max-width: 100%;
 	}
 }
