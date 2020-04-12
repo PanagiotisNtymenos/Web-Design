@@ -7,8 +7,8 @@
 	font-family: CaviarDreamsBold;
 	src: url(fonts/Caviar-Dreams/CaviarDreams_BoldItalic.ttf);
 }
+
 body {
-    font-family: arial, serif, calibri;
     margin: 10px;
     padding: 0;
 	border-style: ridge;
@@ -59,13 +59,17 @@ audio {
 
 img {
 	max-width:100%;
-	margin-right: 5px;
 	float: left;
 }
 
 img:hover {
 	transform: scale(1.05);
 	transition: 1s;
+}
+
+.noHover:hover{
+	
+	transform: none;
 }
 
 
@@ -108,11 +112,11 @@ a:hover {
 .grid-container {
 	display: grid;
 	grid-template-areas:
-	'sizes sizes sizes sizes sizes sizes'
-    'header header header header header header'
-	'menu main main main main main'
-    'footer footer footer footer footer footer';
-	grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr;
+	'sizes sizes'
+    'header header'
+	'menu main'
+    'footer footer';
+	grid-template-columns: 1fr 10fr;
 }
 
 
@@ -155,6 +159,73 @@ a:hover {
 }
 
 
+.item21 { grid-area: photo1; }
+.item22 { grid-area: photo2; }
+.item23 { grid-area: photo3; }
+.item24 { grid-area: photo4; }
+
+
+.img-container {
+	max-width: 1000px;
+	height: auto;
+	position: relative;
+	margin: auto;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+  
+.prev {
+	left: 0;
+	border-radius: 3px 0 0 3px;
+}
+  
+
+.dot {
+	cursor: pointer;
+	height: 10px;
+	width: 10px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	margin-top: 10px;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+  
+.active {
+	background-color: #931f1f;
+}
+
+.dot:hover {
+	background-color: #717171;
+}
+  
+ 
 .middle {
 	flex: 1;
 }
@@ -276,5 +347,9 @@ a:hover {
 
 	audio {
 		max-width: 100%;
+	}
+
+	.p_menu:hover {
+		background: white 0%;
 	}
 }

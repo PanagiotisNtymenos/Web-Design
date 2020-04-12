@@ -5,6 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<link rel="icon" href="index/icon.png">
 	<script src="scripts.js"></script>
 	<title>Artists</title>
@@ -14,14 +16,14 @@
 	<div class="grid-container">
 		<div class="item1">
 			<div id="sizes" style="margin-top:5px; margin-left:10px; text-align:left">
-				<a href="#" onClick="fontSize('small');"><img class="hoverMeHard" id="small_letters" src="letters/letterAsmall.png"
-						alt="Small Size" height="25" width="25"></a>
+				<a href="#" onClick="fontSize('small');"><img class="hoverMeHard" id="small_letters"
+						src="letters/letterAsmall.png" alt="Small Size" height="25" width="25"></a>
 
-				<a href="#" onClick="fontSize('normal');"><img class="hoverMeHard" id="normal_letters" src="letters/letterAActive.png"
-						alt="Normal Size" height="25" width="25"></a>
+				<a href="#" onClick="fontSize('normal');"><img class="hoverMeHard" id="normal_letters"
+						src="letters/letterAActive.png" alt="Normal Size" height="25" width="25"></a>
 
-				<a href="#" onClick="fontSize('big');"><img class="hoverMeHard" id="big_letters" src="letters/letterAbig.png" alt="Big Size"
-						height="25" width="25"></a>
+				<a href="#" onClick="fontSize('big');"><img class="hoverMeHard" id="big_letters"
+						src="letters/letterAbig.png" alt="Big Size" height="25" width="25"></a>
 			</div>
 			<div id="showClock" style="margin-right:10px; text-align:right">
 				<p id="date">Here is Date!</p>
@@ -32,11 +34,10 @@
 			<div id="header">
 				<header>
 					<h1>Καλλιτέχνες</h1>
-					<p id="p1" style="margin-left: 50px; margin-right: 50px;">Σε αυτή την σελίδα θα ήθελα να παρουσιάσω
-						μερικούς
-						από τους αγαπημένους μου καλλιτέχνες που έχουν
-						επηρεάσει όχι μόνο τα δικά μου ακούσματα, αλλά και χιλιάδων άλλων. Είναι καλλιτέχνες τους
-						οποίους προτείνω ανεπιφύλακτα. Θα τους χωρίσω σε Ξένους, Έλληνες και Μπάντες.</p>
+					<p style="margin-left: 50px; margin-right: 50px;">Σε αυτή την σελίδα θα ήθελα να παρουσιάσω
+						μερικούς από τους αγαπημένους μου καλλιτέχνες που έχουν επηρεάσει όχι μόνο τα δικά μου
+						ακούσματα, αλλά και χιλιάδων άλλων. Είναι καλλιτέχνες τους οποίους προτείνω ανεπιφύλακτα. Θα
+						τους χωρίσω σε Ξένους, Έλληνες και Μπάντες.</p>
 				</header>
 			</div>
 		</div>
@@ -50,7 +51,8 @@
 							<picture>
 								<source media="(min-width: 768px)" srcset="people/pavlidhs.jpg">
 								<source media="(min-width: 320px)" srcset="people/pavlidhs_mobile.jpg">
-								<img src="people/pavlidhs.jpg" alt="Pavlos Pavlidhs" class="responsive">
+								<img src="people/pavlidhs.jpg" alt="Pavlos Pavlidhs" class="responsive"
+									style="margin-right: 5px;">
 							</picture>
 							<h3>Παύλος Παυλίδης</h3>
 						</div>
@@ -61,7 +63,7 @@
 							<picture>
 								<source media="(min-width: 768px)" srcset="people/rous.jpg">
 								<source media="(min-width: 320px)" srcset="people/rous_mobile.jpg">
-								<img src="people/mysths.jpg" alt="Rous" class="responsive">
+								<img src="people/mysths.jpg" alt="Rous" class="responsive" style="margin-right: 5px;">
 							</picture>
 							<h3>Ρους</h3>
 						</div>
@@ -72,7 +74,8 @@
 							<picture>
 								<source media="(min-width: 768px)" srcset="people/grammenos.jpg">
 								<source media="(min-width: 320px)" srcset="people/grammenos_mobile.jpg">
-								<img src="people/grammenos.jpg" alt="Spiros Grammenos" class="responsive">
+								<img src="people/grammenos.jpg" alt="Spiros Grammenos" class="responsive"
+									style="margin-right: 5px;">
 							</picture>
 							<h3>Σπύρος Γραμμένος</h3>
 							<p>
@@ -85,7 +88,8 @@
 							<picture>
 								<source media="(min-width: 768px)" srcset="people/alkinoos.jpg">
 								<source media="(min-width: 320px)" srcset="people/alkinoos_mobile.jpg">
-								<img src="people/alkinoos.jpg" alt="Alkinoos Ioannidis" class="responsive">
+								<img src="people/alkinoos.jpg" alt="Alkinoos Ioannidis" class="responsive"
+									style="margin-right: 5px;">
 							</picture>
 							<h3>Αλκίνοος Ιωαννίδης</h3>
 							<p>
@@ -98,7 +102,7 @@
 							<picture>
 								<source media="(min-width: 768px)" srcset="people/arleta.jpg">
 								<source media="(min-width: 320px)" srcset="people/arleta_mobile.jpg">
-								<img src="people/arleta.jpg" alt="Arleta" class="responsive">
+								<img src="people/arleta.jpg" alt="Arleta" class="responsive" style="margin-right: 5px;">
 							</picture>
 							<h3>Αρλέτα</h3>
 						</div>
@@ -109,13 +113,14 @@
 				<div class="middle">
 					<h2>Ξένοι</h2>
 
-				
+
 					<div class="flex-container hoverMe">
 						<div id="john_mayer" class="middle">
 							<picture>
 								<source media="(min-width: 768px)" srcset="people/john_mayer.jpg">
 								<source media="(min-width: 320px)" srcset="people/john_mayer_mobile.jpg">
-								<img src="people/john_mayer.jpg" alt="John Mayer" class="responsive">
+								<img src="people/john_mayer.jpg" alt="John Mayer" class="responsive"
+									style="margin-right: 5px;">
 							</picture>
 							<h3>John Mayer</h3>
 							<p>
@@ -129,7 +134,8 @@
 							<picture>
 								<source media="(min-width: 768px)" srcset="people/ed_sheeran.jpg">
 								<source media="(min-width: 320px)" srcset="people/ed_sheeran_mobile.jpg">
-								<img src="people/ed_sheeran.jpg" alt="Ed Sheeran" class="responsive">
+								<img src="people/ed_sheeran.jpg" alt="Ed Sheeran" class="responsive"
+									style="margin-right: 5px;">
 							</picture>
 							<h3>Ed Sheeran</h3>
 							<p></p>
@@ -141,7 +147,8 @@
 							<picture>
 								<source media="(min-width: 768px)" srcset="people/passenger.jpg">
 								<source media="(min-width: 320px)" srcset="people/passenger_mobile.jpg">
-								<img src="people/passenger.jpg" alt="Passenger" class="responsive">
+								<img src="people/passenger.jpg" alt="Passenger" class="responsive"
+									style="margin-right: 5px;">
 							</picture>
 							<h3>Passenger</h3>
 							<p></p>
@@ -153,7 +160,8 @@
 							<picture>
 								<source media="(min-width: 768px)" srcset="people/sivert.jpg">
 								<source media="(min-width: 320px)" srcset="people/sivert_mobile.jpg">
-								<img src="people/sivert.jpg" alt="Sivert Høyem" class="responsive">
+								<img src="people/sivert.jpg" alt="Sivert Høyem" class="responsive"
+									style="margin-right: 5px;">
 							</picture>
 							<h3>Sivert Høyem</h3>
 							<p></p>
@@ -165,7 +173,8 @@
 							<picture>
 								<source media="(min-width: 768px)" srcset="people/buffalo.jpg">
 								<source media="(min-width: 320px)" srcset="people/buffalo_mobile.jpg">
-								<img src="people/buffalo.jpg" alt="The White Buffalo" class="responsive">
+								<img src="people/buffalo.jpg" alt="The White Buffalo" class="responsive"
+									style="margin-right: 5px;">
 							</picture>
 							<h3>The White Buffalo</h3>
 							<p></p>
@@ -182,7 +191,8 @@
 							<picture>
 								<source media="(min-width: 768px)" srcset="people/diafana_krina.jpg">
 								<source media="(min-width: 320px)" srcset="people/diafana_krina_mobile.jpg">
-								<img src="people/diafana_krina.jpg" alt="Diafana Krina" class="responsive">
+								<img src="people/diafana_krina.jpg" alt="Diafana Krina" class="responsive"
+									style="margin-right: 5px;">
 							</picture>
 							<h3>Διάφανα Κρίνα</h3>
 						</div>
@@ -193,7 +203,8 @@
 							<picture>
 								<source media="(min-width: 768px)" srcset="people/ypogeia_revmata.jpg">
 								<source media="(min-width: 320px)" srcset="people/ypogeia_revmata_mobile.jpg">
-								<img src="people/ypogeia_revmata.jpg" alt="Ypogeia Revmata" class="responsive">
+								<img src="people/ypogeia_revmata.jpg" alt="Ypogeia Revmata" class="responsive"
+									style="margin-right: 5px;">
 							</picture>
 							<h3>Υπόγεια Ρεύματα</h3>
 							<p></p>
@@ -206,7 +217,7 @@
 							<picture>
 								<source media="(min-width: 768px)" srcset="people/queen.jpg">
 								<source media="(min-width: 320px)" srcset="people/queen_mobile.jpg">
-								<img src="people/queen.jpg" alt="Queen" class="responsive">
+								<img src="people/queen.jpg" alt="Queen" class="responsive" style="margin-right: 5px;">
 							</picture>
 							<h3>Queen</h3>
 							<p></p>
@@ -218,7 +229,8 @@
 						<div id="imiz" class="middle">
 							<picture>
 								<source media="(min-width: 768px)" srcset="people/imiz.jpg">
-								<source media="(min-width: 320px)" srcset="people/imiz_mobile.jpg">
+								<source media="(min-width: 320px)" srcset="people/imiz_mobile.jpg"
+									style="margin-right: 5px;">
 								<img src="people/imiz.jpg" alt="Imiz" class="responsive">
 							</picture>
 							<h3>Ημισκούμπρια</h3>
@@ -230,7 +242,8 @@
 						<div id="xilina" class="middle">
 							<picture>
 								<source media="(min-width: 768px)" srcset="people/xilina.jpg">
-								<source media="(min-width: 320px)" srcset="people/xilina_mobile.jpg">
+								<source media="(min-width: 320px)" srcset="people/xilina_mobile.jpg"
+									style="margin-right: 5px;">
 								<img src="people/xilina.jpg" alt="Xilina" class="responsive">
 							</picture>
 							<h3>Ξύλινα Σπαθιά</h3>
@@ -242,7 +255,8 @@
 						<div id="trypes" class="middle">
 							<picture>
 								<source media="(min-width: 768px)" srcset="people/trypes.jpg">
-								<source media="(min-width: 320px)" srcset="people/trypes_mobile.jpg">
+								<source media="(min-width: 320px)" srcset="people/trypes_mobile.jpg"
+									style="margin-right: 5px;">
 								<img src="people/trypes.jpg" alt="Trypes" class="responsive">
 							</picture>
 							<h3>Τρύπες</h3>
@@ -250,9 +264,6 @@
 							</p>
 						</div>
 					</div>
-
-
-
 				</div>
 			</div>
 		</div>
@@ -275,9 +286,6 @@
 
 			</div>
 		</div>
-
-
-
 
 		<div class="item5" id="footer">
 			<footer>
