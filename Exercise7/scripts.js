@@ -53,6 +53,7 @@ function nightMODEindex() {
     document.getElementById("link4").style.color = "#780000";
     document.getElementById("link5").style.color = "#780000";
     document.getElementById("link6").style.color = "#780000";
+    document.getElementById("link7").style.color = "#780000";
     document.querySelector("body").style.backgroundColor = "#0d0d0d";
     document.querySelector("body").style.borderColor = "WhiteSmoke";
     document.querySelector("body").style.color = "WhiteSmoke";
@@ -81,6 +82,7 @@ function normalMODEindex() {
     document.getElementById("link4").style.color = "#280000";
     document.getElementById("link5").style.color = "#280000";
     document.getElementById("link6").style.color = "#280000";
+    document.getElementById("link7").style.color = "#280000";
     document.querySelector("body").style.backgroundColor = "WhiteSmoke";
     document.querySelector("body").style.borderColor = "#280000";
     document.querySelector("body").style.color = "#280000";
@@ -108,6 +110,7 @@ function nightMODEironMan() {
     document.getElementById("link3").style.color = "#780000";
     document.getElementById("link4").style.color = "#780000";
     document.getElementById("link5").style.color = "#780000";
+    document.getElementById("link7").style.color = "#780000";
     document.querySelector("body").style.backgroundColor = "#0d0d0d";
     document.querySelector("body").style.borderColor = "WhiteSmoke";
     document.querySelector("body").style.color = "WhiteSmoke";
@@ -135,6 +138,7 @@ function normalMODEironMan() {
     document.getElementById("link3").style.color = "#280000";
     document.getElementById("link4").style.color = "#280000";
     document.getElementById("link5").style.color = "#280000";
+    document.getElementById("link7").style.color = "#280000";
     document.querySelector("body").style.backgroundColor = "WhiteSmoke";
     document.querySelector("body").style.borderColor = "#280000";
     document.querySelector("body").style.color = "#280000";
@@ -162,6 +166,7 @@ function nightMODEspiderMan() {
     document.getElementById("link3").style.color = "#780000";
     document.getElementById("link4").style.color = "#780000";
     document.getElementById("link5").style.color = "#780000";
+    document.getElementById("link7").style.color = "#780000";
     document.querySelector("body").style.backgroundColor = "#0d0d0d";
     document.querySelector("body").style.borderColor = "WhiteSmoke";
     document.querySelector("body").style.color = "WhiteSmoke";
@@ -189,6 +194,7 @@ function normalMODEspiderMan() {
     document.getElementById("link3").style.color = "#280000";
     document.getElementById("link4").style.color = "#280000";
     document.getElementById("link5").style.color = "#280000";
+    document.getElementById("link7").style.color = "#280000";
     document.querySelector("body").style.backgroundColor = "WhiteSmoke";
     document.querySelector("body").style.borderColor = "#280000";
     document.querySelector("body").style.color = "#280000";
