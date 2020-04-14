@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mockups</title>
+	<style>
+		@font-face {
+			font-family: CaviarDreams;
+			src: url(fonts/Caviar-Dreams/CaviarDreams.ttf);
+		}
+
+		h1 {
+			font-family: CaviarDreams;
+		}
+
+		img {
+			height: auto;
+			width: 50%;
+		}
+
+		img:hover {
+			transform: scale(1.05);
+			transition: 0.4s;
+		}
+
+		.container {
+			max-width: 50%;
+			position: relative;
+			margin-left: 25%;
+			margin-right: 25%;
+		}
+
+		.overlay {
+			position: absolute;
+			bottom: 0;
+			margin-left: 25%;
+			margin-right: 25%;
+			background: rgb(0, 0, 0);
+			background: rgba(0, 0, 0, 0.5);
+			/* Black see-through */
+			color: #f1f1f1;
+			width: 48%;
+			transition: .2s ease;
+			opacity: 0;
+			color: white;
+			font-size: 20px;
+			padding: 10px;
+			text-align: center;
+			font-family: CaviarDreams;
+		}
+
+		.container:hover .overlay {
+			opacity: 1;
+			transform: scale(1.05);
+			transition: 0.4s;
+		}
+	</style>
+</head>
+
+<body>
+	<div style="text-align: center;">
+
+		<h1>Music</h1>
+		<div class="container" style="text-align: center;">
+			<a href="mockup/mockup.jpg"><img id="Mockup1" src="mockup/mockup.png" alt="Index"></a>
+			<div class="overlay">Select Image for Fullscreen</div>
+		</div>
+		<hr>
+
+		<h1>Artists</h1>
+		<div class="container">
+			<a href="mockup/mockup_2.jpg"><img id="Mockup2" src="mockup/mockup_2.png" alt="Artists"></a>
+			<div class="overlay">Select Image for Fullscreen</div>
+		</div>
+		<hr>
+
+		<h1>Albums</h1>
+		<div class="container" style="border-color:brown">
+			<a href="mockup/mockup_3.jpg"><img id="Mockup3" src="mockup/mockup_3.png" alt="Albums"></a>
+			<div class="overlay">Select Image for Fullscreen</div>
+		</div>
+
+	</div>
+</body>
+
+</html>
