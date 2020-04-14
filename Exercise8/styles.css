@@ -66,8 +66,7 @@ img:hover {
 	transition: 1s;
 }
 
-.noHover:hover{
-	
+.noHover:hover{	
 	transform: none;
 }
 
@@ -363,6 +362,7 @@ a:hover {
 
 	.p_menu:hover {
 		background: white 0%;
+		background-image: white 0%;
 	}
 
 	.img-container {

@@ -90,3 +90,16 @@ function date() {
         document.getElementById("clock").innerHTML = date.toLocaleTimeString();
     }
 }
+
+function activePage(page) {
+    if (page == "index") {
+        document.getElementById("index").style.color = "#931f1f";
+        document.getElementById("indexP").style.backgroundImage = "linear-gradient(to right, #931f1f 1%, white 0%)";
+    } else if (page == "artists") {
+        document.getElementById("artists").style.color = "#931f1f";
+        document.getElementById("indexAr").style.backgroundImage = "linear-gradient(to right, #931f1f 1%, white 0%)";
+    } else if (page == "albums") {
+        document.getElementById("albums").style.color = "#931f1f";
+        document.getElementById("indexAl").style.backgroundImage = "linear-gradient(to right, #931f1f 1%, white 0%)";
+    } 
+}

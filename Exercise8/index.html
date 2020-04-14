@@ -10,23 +10,25 @@
 	<title>Music</title>
 </head>
 
-<body onload="date()">
+<body onload="date(); activePage('index');">
 	<div class="grid-container">
 		<div class="item1">
-			<div id="sizes" style="margin-top:5px; margin-left:10px; text-align:left">
-				<a href="#" onClick="fontSize('small');"><img class="hoverMeHard" id="small_letters"
-						src="letters/letterAsmall.png" alt="Small Size" height="25" width="25"></a>
+			<header>
+				<div id="sizes" style="margin-top:5px; margin-left:10px; text-align:left">
+					<a href="#" onClick="fontSize('small');"><img class="hoverMeHard" id="small_letters"
+							src="letters/letterAsmall.png" alt="Small Size" height="25" width="25"></a>
 
-				<a href="#" onClick="fontSize('normal');"><img class="hoverMeHard" id="normal_letters"
-						src="letters/letterAActive.png" alt="Normal Size" height="25" width="25"></a>
+					<a href="#" onClick="fontSize('normal');"><img class="hoverMeHard" id="normal_letters"
+							src="letters/letterAActive.png" alt="Normal Size" height="25" width="25"></a>
 
-				<a href="#" onClick="fontSize('big');"><img class="hoverMeHard" id="big_letters"
-						src="letters/letterAbig.png" alt="Big Size" height="25" width="25"></a>
-			</div>
-			<div id="showClock" style="margin-right:10px; text-align:right">
-				<p id="date">Here is Date!</p>
-				<p id="clock">Here is Time!</p>
-			</div>
+					<a href="#" onClick="fontSize('big');"><img class="hoverMeHard" id="big_letters"
+							src="letters/letterAbig.png" alt="Big Size" height="25" width="25"></a>
+				</div>
+				<div id="showClock" style="margin-right:10px; text-align:right">
+					<p id="date">Here is Date!</p>
+					<p id="clock">Here is Time!</p>
+				</div>
+			</header>
 		</div>
 		<div class="item2" style="text-align:center;">
 			<div id="header">
@@ -40,129 +42,144 @@
 		</div>
 
 		<div class="item3" id="main">
-
-			<div class="flex-container">
-				<div class="middle">
-					<h2>Τέχνη</h2>
-					<picture>
-						<source media="(min-width: 768px)" srcset="index/mysths.jpg">
-						<source media="(min-width: 320px)" srcset="index/mysths_mobile.jpg">
-						<img src="index/mysths.jpg" alt="Kid Singing" class="responsive" style="margin-right: 10px;">
-					</picture>
-					<p>Πραγματικά δεν έχω γνωρίσει κάποιον που να μην του αρέσει η μουσική. Όλοι μας ακούμε καθημερινά,
-						έιτε για να ξεχαστούμε ή να διασκεδάσουμε, αλλά κυρίως ακούμε για να νιώσουμε. Πιστεύω πως
-						πολλοί θα συμφωνούσαν στο ότι η μουσική είναι από τις πιο ολοκληρωμένες τέχνες, αν όχι η πιο
-						ολοκληρωμένη. Συνδυάζει με απόλυτη ισορροπία την ποίηση και την μελωδία. Πάνω σε αυτό ακριβώς το
-						σχόλιο θα ήθελα να επεκταθώ λίγο παραπάνω. Προσωπικά, βρέθηκα από πολύ μικρή ηλικία να μπορώ να
-						κατανοώ την δύναμη της μουσικής. Ήμουν πολύ τυχερός καθώς στον κύκλο μου και στην οικογένειά
-						μου, υπήρχαν τα κατάλληλα πρότυπα και ακούσματα που χρειαζόμουν έτσι ώστε να εκτιμήσω την
-						μουσική και να θελήσω να αναλύσω οτιδήποτε είχε σχέση με αυτήν. Πλέον είμαι 22 χρονών και η
-						καριέρα του μουσικού αποτελεί έναν από τους μαγλύτερους στόχους μου. Βρίσκω απίστευτα
-						εντυπωσιακό το πως κάποια λόγια σε ένα χαρτί μπορούν να ζωντανέψουν με την βοήθεια μιας
-						μελωδίας. Έτσι καθημερινά εξασκώ τις ικανότητες μου στα μουσικά όργανα που γνωρίζω και βυθίζομαι
-						ολοένα και παραπάνω στην δημιουργία ολόκληρων τραγουδιών. Η δημιουργία ενός κομματιού που θα
-						αγγίξει τον ακροατή είναι πολλές φορές θέμα των στίχων και όχι μιας μελωδίας. Θα μιλήσω παραπάνω
-						στην επόμενη παράγραφο, όπου και θα αναλύσω τις αιτίες που με ώθησαν στο να ηχογραφώ δικά μου
-						κομμάτια.
-					</p>
-				</div>
-
-
-				<div class="middle">
-					<h2>Σύνθεση</h2>
-					<picture>
-						<source media="(min-width: 768px)" srcset="index/lyrics.jpg">
-						<source media="(min-width: 320px)" srcset="index/lyrics_mobile.jpg">
-						<img src="index/lyrics.jpg" alt="Lyrics" class="responsive" style="margin-right: 10px;">
-					</picture>
-					<p>Όπως προανέφερα η Μουσική συνδυάζει ποιήματα με μελωδία. Όποιος έχει ασχοληθεί έστω και λίγο με
-						την δημιουργία/σύνθεση μουσικής θα παραδεχτεί πως οι στίχοι έιναι ίσως το πιο απαιτητικό κομμάτι
-						της διαδικασίας. Η συγγραφή στίχων πρέπει να πηγάζει από πραγματικά γεγονότα και πραγματικά
-						συναισθήματα. Αυτό κάνει το κάθε τραγούδι να είναι αυτό που είναι και δίνει όλη αυτή την δύναμη
-						στην μουσική. Ενώ κάποιος θα περίμενε πως αυτή η διαδικασία είναι καλύτερο να γίνει με απόλυτη
-						συγκέντρωση και απομόνωση, στην πραγματικότητα οι καλύτεροι στίχοι έχουν γραφτεί σε ώρες
-						απελπισίας και σύγχισης του καλλιτέχνη. Άλλωστε τι να γράψει κανείς όταν όλα είναι
-						<i>"φυσιολογικά"</i>. Χρειαζόμαστε αυτή την ένταση και αυτή την εναλλαγή συναισθημάτων. Η
-						ποικιλία άλλωστε είναι αυτή που χαρακτηρίζει την ιδιοσυγκρασία της ανθρωπότητας. Είναι δύσκολο
-						να εξηγήσω τους λόγους που με ελκύει τόσο πολύ η σύνθεση. Ίσως είναι η όλη διαδικασία και όχι
-						κάτι συγκεκριμένο. Από τον πρώτο στίχο μέχρι την μίξη του τραγουδιού. Κάποιες φορές είναι
-						δύσκολο έως και αδύνατο το να εκφράσουμε αυτά που νιώθουμε και αυτά που σκεφτόμαστε. Μεχρι την
-						στιγμή που θα βρούμε αυτό το ένα τραγούδι που μας εκφράζει και θα μας κάνει να ταυτιστούμε
-						πλήρως. Εγώ επέλεξα να μην περιμένω και να δημιουργήσω μόνος μου αυτά τα συναισθήματα με την
-						ελπίδα να υπάρχει έστω και ένας ακόμη που να νιώθει ότι και εγώ.
-					</p>
-				</div>
-			</div>
-
-			<h2>Gallery</h2>
-			<div style="box-shadow: 1px 1.5px 2.5px 1.5px; margin: 10px; padding: 10px;">
-				<div class="img-container" style="box-shadow: 1px 1.5px 2.5px 1.5px; padding: 10px;">
-					<div>
-
-						<div class="mySlides">
-							<picture>
-								<source media="(min-width: 768px)" srcset="index/mysths_paizei_kithara.jpg">
-								<source media="(min-width: 320px)" srcset="index/mysths_paizei_kithara_mobile.jpg">
-								<img src="index/mysths_paizei_kithara.jpg" alt="Mysths Playing Guitar"
-									style="width:100%;" class="noHover">
-							</picture>
-						</div>
-
-						<div class="mySlides">
-							<picture>
-								<source media="(min-width: 768px)" srcset="index/concert.jpg">
-								<source media="(min-width: 320px)" srcset="index/concert_mobile.jpg">
-								<img src="index/concert.jpg" alt="Concert" style="width:100%;" class="noHover">
-							</picture>
-						</div>
-
-						<div class="mySlides">
-							<picture>
-								<source media="(min-width: 768px)" srcset="index/fender.jpg">
-								<source media="(min-width: 320px)" srcset="index/fender_mobile.jpg">
-								<img src="index/fender.jpg" alt="Fender" style="width:100%;" class="noHover">
-							</picture>
-						</div>
-
-						<div class="mySlides">
-							<picture>
-								<source media="(min-width: 768px)" srcset="index/mysths_piano.jpg">
-								<source media="(min-width: 320px)" srcset="index/mysths_piano_mobile.jpg">
-								<img src="index/mysths_piano.jpg" alt="Mysths Playing Piano" style="width:100%;"
-									class="noHover">
-							</picture>
-						</div>
-
-						<div class="mySlides">
-							<picture>
-								<source media="(min-width: 768px)" srcset="index/pickup.jpg">
-								<source media="(min-width: 320px)" srcset="index/pickup_mobile.jpg">
-								<img src="index/pickup.jpg" alt="Pickup" style="width:100%;" class="noHover">
-							</picture>
-						</div>
-
-						<div class="mySlides">
-							<picture>
-								<source media="(min-width: 768px)" srcset="index/piano.jpg">
-								<source media="(min-width: 320px)" srcset="index/piano_mobile.jpg">
-								<img src="index/piano.jpg" alt="Piano" style="width:100%;" class="noHover">
-							</picture>
-						</div>
-
+			<main>
+				<div class="flex-container">
+					<div class="middle">
+						<h2>Τέχνη</h2>
+						<picture>
+							<source media="(min-width: 768px)" srcset="index/mysths.jpg">
+							<source media="(min-width: 320px)" srcset="index/mysths_mobile.jpg">
+							<img src="index/mysths.jpg" alt="Kid Singing" class="responsive"
+								style="margin-right: 10px;">
+						</picture>
+						<p>Πραγματικά δεν έχω γνωρίσει κάποιον που να μην του αρέσει η μουσική. Όλοι μας ακούμε
+							καθημερινά,
+							έιτε για να ξεχαστούμε ή να διασκεδάσουμε, αλλά κυρίως ακούμε για να νιώσουμε. Πιστεύω πως
+							πολλοί θα συμφωνούσαν στο ότι η μουσική είναι από τις πιο ολοκληρωμένες τέχνες, αν όχι η πιο
+							ολοκληρωμένη. Συνδυάζει με απόλυτη ισορροπία την ποίηση και την μελωδία. Πάνω σε αυτό
+							ακριβώς το
+							σχόλιο θα ήθελα να επεκταθώ λίγο παραπάνω. Προσωπικά, βρέθηκα από πολύ μικρή ηλικία να μπορώ
+							να
+							κατανοώ την δύναμη της μουσικής. Ήμουν πολύ τυχερός καθώς στον κύκλο μου και στην οικογένειά
+							μου, υπήρχαν τα κατάλληλα πρότυπα και ακούσματα που χρειαζόμουν έτσι ώστε να εκτιμήσω την
+							μουσική και να θελήσω να αναλύσω οτιδήποτε είχε σχέση με αυτήν. Πλέον είμαι 22 χρονών και η
+							καριέρα του μουσικού αποτελεί έναν από τους μαγλύτερους στόχους μου. Βρίσκω απίστευτα
+							εντυπωσιακό το πως κάποια λόγια σε ένα χαρτί μπορούν να ζωντανέψουν με την βοήθεια μιας
+							μελωδίας. Έτσι καθημερινά εξασκώ τις ικανότητες μου στα μουσικά όργανα που γνωρίζω και
+							βυθίζομαι
+							ολοένα και παραπάνω στην δημιουργία ολόκληρων τραγουδιών. Η δημιουργία ενός κομματιού που θα
+							αγγίξει τον ακροατή είναι πολλές φορές θέμα των στίχων και όχι μιας μελωδίας. Θα μιλήσω
+							παραπάνω
+							στην επόμενη παράγραφο, όπου και θα αναλύσω τις αιτίες που με ώθησαν στο να ηχογραφώ δικά
+							μου
+							κομμάτια.
+						</p>
 					</div>
 
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-					<a class="next" onclick="plusSlides(1)">&#10095;</a>
-					<div style="text-align:center;">
-						<span class="dot" onclick="currentSlide(1)"></span>
-						<span class="dot" onclick="currentSlide(2)"></span>
-						<span class="dot" onclick="currentSlide(3)"></span>
-						<span class="dot" onclick="currentSlide(4)"></span>
-						<span class="dot" onclick="currentSlide(5)"></span>
-						<span class="dot" onclick="currentSlide(6)"></span>
+
+					<div class="middle">
+						<h2>Σύνθεση</h2>
+						<picture>
+							<source media="(min-width: 768px)" srcset="index/lyrics.jpg">
+							<source media="(min-width: 320px)" srcset="index/lyrics_mobile.jpg">
+							<img src="index/lyrics.jpg" alt="Lyrics" class="responsive" style="margin-right: 10px;">
+						</picture>
+						<p>Όπως προανέφερα η Μουσική συνδυάζει ποιήματα με μελωδία. Όποιος έχει ασχοληθεί έστω και λίγο
+							με
+							την δημιουργία/σύνθεση μουσικής θα παραδεχτεί πως οι στίχοι έιναι ίσως το πιο απαιτητικό
+							κομμάτι
+							της διαδικασίας. Η συγγραφή στίχων πρέπει να πηγάζει από πραγματικά γεγονότα και πραγματικά
+							συναισθήματα. Αυτό κάνει το κάθε τραγούδι να είναι αυτό που είναι και δίνει όλη αυτή την
+							δύναμη
+							στην μουσική. Ενώ κάποιος θα περίμενε πως αυτή η διαδικασία είναι καλύτερο να γίνει με
+							απόλυτη
+							συγκέντρωση και απομόνωση, στην πραγματικότητα οι καλύτεροι στίχοι έχουν γραφτεί σε ώρες
+							απελπισίας και σύγχισης του καλλιτέχνη. Άλλωστε τι να γράψει κανείς όταν όλα είναι
+							<i>"φυσιολογικά"</i>. Χρειαζόμαστε αυτή την ένταση και αυτή την εναλλαγή συναισθημάτων. Η
+							ποικιλία άλλωστε είναι αυτή που χαρακτηρίζει την ιδιοσυγκρασία της ανθρωπότητας. Είναι
+							δύσκολο
+							να εξηγήσω τους λόγους που με ελκύει τόσο πολύ η σύνθεση. Ίσως είναι η όλη διαδικασία και
+							όχι
+							κάτι συγκεκριμένο. Από τον πρώτο στίχο μέχρι την μίξη του τραγουδιού. Κάποιες φορές είναι
+							δύσκολο έως και αδύνατο το να εκφράσουμε αυτά που νιώθουμε και αυτά που σκεφτόμαστε. Μεχρι
+							την
+							στιγμή που θα βρούμε αυτό το ένα τραγούδι που μας εκφράζει και θα μας κάνει να ταυτιστούμε
+							πλήρως. Εγώ επέλεξα να μην περιμένω και να δημιουργήσω μόνος μου αυτά τα συναισθήματα με την
+							ελπίδα να υπάρχει έστω και ένας ακόμη που να νιώθει ότι και εγώ.
+						</p>
 					</div>
 				</div>
-			</div>
+
+				<h2>Gallery</h2>
+				<div style="box-shadow: 1px 1.5px 2.5px 1.5px; margin: 10px; padding: 10px;">
+					<div class="img-container" style="box-shadow: 1px 1.5px 2.5px 1.5px; padding: 10px;">
+						<div>
+
+							<div class="mySlides">
+								<picture>
+									<source media="(min-width: 768px)" srcset="index/mysths_paizei_kithara.jpg">
+									<source media="(min-width: 320px)" srcset="index/mysths_paizei_kithara_mobile.jpg">
+									<img src="index/mysths_paizei_kithara.jpg" alt="Mysths Playing Guitar"
+										style="width:100%;" class="noHover">
+								</picture>
+							</div>
+
+							<div class="mySlides">
+								<picture>
+									<source media="(min-width: 768px)" srcset="index/concert.jpg">
+									<source media="(min-width: 320px)" srcset="index/concert_mobile.jpg">
+									<img src="index/concert.jpg" alt="Concert" style="width:100%;" class="noHover">
+								</picture>
+							</div>
+
+							<div class="mySlides">
+								<picture>
+									<source media="(min-width: 768px)" srcset="index/fender.jpg">
+									<source media="(min-width: 320px)" srcset="index/fender_mobile.jpg">
+									<img src="index/fender.jpg" alt="Fender" style="width:100%;" class="noHover">
+								</picture>
+							</div>
+
+							<div class="mySlides">
+								<picture>
+									<source media="(min-width: 768px)" srcset="index/mysths_piano.jpg">
+									<source media="(min-width: 320px)" srcset="index/mysths_piano_mobile.jpg">
+									<img src="index/mysths_piano.jpg" alt="Mysths Playing Piano" style="width:100%;"
+										class="noHover">
+								</picture>
+							</div>
+
+							<div class="mySlides">
+								<picture>
+									<source media="(min-width: 768px)" srcset="index/pickup.jpg">
+									<source media="(min-width: 320px)" srcset="index/pickup_mobile.jpg">
+									<img src="index/pickup.jpg" alt="Pickup" style="width:100%;" class="noHover">
+								</picture>
+							</div>
+
+							<div class="mySlides">
+								<picture>
+									<source media="(min-width: 768px)" srcset="index/piano.jpg">
+									<source media="(min-width: 320px)" srcset="index/piano_mobile.jpg">
+									<img src="index/piano.jpg" alt="Piano" style="width:100%;" class="noHover">
+								</picture>
+							</div>
+
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						<div style="text-align:center;">
+							<span class="dot" onclick="currentSlide(1)"></span>
+							<span class="dot" onclick="currentSlide(2)"></span>
+							<span class="dot" onclick="currentSlide(3)"></span>
+							<span class="dot" onclick="currentSlide(4)"></span>
+							<span class="dot" onclick="currentSlide(5)"></span>
+							<span class="dot" onclick="currentSlide(6)"></span>
+						</div>
+					</div>
+				</div>
+			</main>
 		</div>
 
 
@@ -174,15 +191,15 @@
 						<div class="center">Αρχική</div>
 					</a></div>
 
-				<div class="p_menu"><a class="center" href="index.html">
+				<div id="indexP" class="p_menu"><a id="index" class="center" href="index.html">
 						<div class="center">Μουσική</div>
 					</a></div>
 
-				<div class="p_menu"><a class="center" href="albums.html">
+				<div id="indexAl" class="p_menu"><a id="albums" class="center" href="albums.html">
 						<div class="center">Άλμπουμ</div>
 					</a></div>
 
-				<div class="p_menu"><a class="center" href="artists.html">
+				<div id="indexAr" class="p_menu"><a id="artists" class="center" href="artists.html">
 						<div class="center">Καλλιτέχνες</div>
 					</a></div>
 

@@ -10,23 +10,25 @@
 	<title>Albums</title>
 </head>
 
-<body onload="date()">
+<body onload="date(); activePage('albums');">
 	<div class="grid-container">
 		<div class="item1">
-			<div id="sizes" style="margin-top:5px; margin-left:10px; text-align:left">
-				<a href="#" onClick="fontSize('small');"><img class="hoverMeHard" id="small_letters"
-						src="letters/letterAsmall.png" alt="Small Size" height="25" width="25"></a>
+			<header>
+				<div id="sizes" style="margin-top:5px; margin-left:10px; text-align:left">
+					<a href="#" onClick="fontSize('small');"><img class="hoverMeHard" id="small_letters"
+							src="letters/letterAsmall.png" alt="Small Size" height="25" width="25"></a>
 
-				<a href="#" onClick="fontSize('normal');"><img class="hoverMeHard" id="normal_letters"
-						src="letters/letterAActive.png" alt="Normal Size" height="25" width="25"></a>
+					<a href="#" onClick="fontSize('normal');"><img class="hoverMeHard" id="normal_letters"
+							src="letters/letterAActive.png" alt="Normal Size" height="25" width="25"></a>
 
-				<a href="#" onClick="fontSize('big');"><img class="hoverMeHard" id="big_letters"
-						src="letters/letterAbig.png" alt="Big Size" height="25" width="25"></a>
-			</div>
-			<div id="showClock" style="margin-right:10px; text-align:right">
-				<p id="date">Here is Date!</p>
-				<p id="clock">Here is Time!</p>
-			</div>
+					<a href="#" onClick="fontSize('big');"><img class="hoverMeHard" id="big_letters"
+							src="letters/letterAbig.png" alt="Big Size" height="25" width="25"></a>
+				</div>
+				<div id="showClock" style="margin-right:10px; text-align:right">
+					<p id="date">Here is Date!</p>
+					<p id="clock">Here is Time!</p>
+				</div>
+			</header>
 		</div>
 		<div class="item2" style="text-align:center;">
 			<div id="header">
@@ -42,370 +44,374 @@
 		</div>
 
 		<div class="item3" id="main">
-			<div class="flex-container">
+			<main>
+				<div class="flex-container">
 
-				<div class="middle">
-					<h2>Ελληνικοί</h2>
+					<div class="middle">
+						<h2>Ελληνικοί</h2>
 
-					<div class="flex-container hoverMe">
-						<div id="ayto_to_ploio" class="middle">
-							<div class="grid-cont">
-								<div class="item11">
-									<a href="https://open.spotify.com/album/218pGwo9oe0ojgIY5jkNlT">
-										<picture>
-											<source media="(min-width: 768px)" srcset="albums/ayto_to_ploio.jpg">
-											<source media="(min-width: 320px)" srcset="albums/ayto_to_ploio_mobile.jpg">
-											<img src="albums/ayto_to_ploio.jpg" alt="Ayto to Ploio pou Olo Ftanei"
-												class="MAX_responsive">
-										</picture>
-									</a>
-								</div>
-								<div class="item12">
-									<h3>Αυτό το Πλοίο που όλο Φτάνει </h3>
-								</div>
-								<div class="item13">
-									<h4 class="nowrap">Καλλιτέχνης: Παύλος Παυλίδης</h4>
-								</div>
-								<div class="item14">
-									<h4>Έτος: 2010</h4>
-								</div>
-								<div class="item15">
-									<h4>Τραγούδι: Το Ποδήλατο<br><br>
-										<audio controls>
-											<source src="songs/podhlato.mp3" type="audio/mpeg">
-											Ο Φυλλομετρητής σας δεν υποστηρίζει ηχητικά μηνύματα.
-										</audio>
+						<div class="flex-container hoverMe">
+							<div id="ayto_to_ploio" class="middle">
+								<div class="grid-cont">
+									<div class="item11">
+										<a href="https://open.spotify.com/album/218pGwo9oe0ojgIY5jkNlT">
+											<picture>
+												<source media="(min-width: 768px)" srcset="albums/ayto_to_ploio.jpg">
+												<source media="(min-width: 320px)"
+													srcset="albums/ayto_to_ploio_mobile.jpg">
+												<img src="albums/ayto_to_ploio.jpg" alt="Ayto to Ploio pou Olo Ftanei"
+													class="MAX_responsive">
+											</picture>
+										</a>
+									</div>
+									<div class="item12">
+										<h3>Αυτό το Πλοίο που όλο Φτάνει </h3>
+									</div>
+									<div class="item13">
+										<h4 class="nowrap">Καλλιτέχνης: Παύλος Παυλίδης</h4>
+									</div>
+									<div class="item14">
+										<h4>Έτος: 2010</h4>
+									</div>
+									<div class="item15">
+										<h4>Τραγούδι: Το Ποδήλατο<br><br>
+											<audio controls>
+												<source src="songs/podhlato.mp3" type="audio/mpeg">
+												Ο Φυλλομετρητής σας δεν υποστηρίζει ηχητικά μηνύματα.
+											</audio>
 
-									</h4>
+										</h4>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="flex-container hoverMe">
-						<div id="rous2" class="middle">
-							<div class="grid-cont">
-								<div class="item11">
-									<a href="https://open.spotify.com/album/5N27AVu9yz8mBvFcZtBVcF">
-										<picture>
-											<source media="(min-width: 768px)" srcset="albums/rous2.jpg">
-											<source media="(min-width: 320px)" srcset="albums/rous2_mobile.jpg">
-											<img src="albums/ayto_to_ploio.jpg" alt="Rous II" class="MAX_responsive">
-										</picture>
-									</a>
-								</div>
-								<div class="item12">
-									<h3>Ρους ΙΙ</h3>
-								</div>
-								<div class="item13">
-									<h4 class="nowrap">Καλλιτέχνης: Ρους</h4>
-								</div>
-								<div class="item14">
-									<h4>Έτος: 2017</h4>
-								</div>
-								<div class="item15">
-									<h4>Τραγούδι: Δευτέρα<br><br>
-										<audio controls>
-											<source src="songs/deftera.mp3" type="audio/mpeg">
-											Ο Φυλλομετρητής σας δεν υποστηρίζει ηχητικά μηνύματα.
-										</audio>
+						<div class="flex-container hoverMe">
+							<div id="rous2" class="middle">
+								<div class="grid-cont">
+									<div class="item11">
+										<a href="https://open.spotify.com/album/5N27AVu9yz8mBvFcZtBVcF">
+											<picture>
+												<source media="(min-width: 768px)" srcset="albums/rous2.jpg">
+												<source media="(min-width: 320px)" srcset="albums/rous2_mobile.jpg">
+												<img src="albums/ayto_to_ploio.jpg" alt="Rous II"
+													class="MAX_responsive">
+											</picture>
+										</a>
+									</div>
+									<div class="item12">
+										<h3>Ρους ΙΙ</h3>
+									</div>
+									<div class="item13">
+										<h4 class="nowrap">Καλλιτέχνης: Ρους</h4>
+									</div>
+									<div class="item14">
+										<h4>Έτος: 2017</h4>
+									</div>
+									<div class="item15">
+										<h4>Τραγούδι: Δευτέρα<br><br>
+											<audio controls>
+												<source src="songs/deftera.mp3" type="audio/mpeg">
+												Ο Φυλλομετρητής σας δεν υποστηρίζει ηχητικά μηνύματα.
+											</audio>
 
-									</h4>
+										</h4>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="flex-container hoverMe">
-						<div id="16" class="middle">
-							<div class="grid-cont">
-								<div class="item11">
-									<a href="https://open.spotify.com/artist/3R0jQDaLYWSGpsRc2aBkrj">
-										<picture>
-											<source media="(min-width: 768px)" srcset="albums/16.jpg">
-											<source media="(min-width: 320px)" srcset="albums/16_mobile.jpg">
-											<img src="albums/16.jpg" alt="16" class="MAX_responsive">
-										</picture>
-									</a>
-								</div>
-								<div class="item12">
-									<h3>16</h3>
-								</div>
-								<div class="item13">
-									<h4 class="nowrap">Καλλιτέχνης: Σπύρος Γραμμένος</h4>
-								</div>
-								<div class="item14">
-									<h4>Έτος: 2016</h4>
-								</div>
-								<div class="item15">
-									<h4>Τραγούδι: Τι Με Κοιτάς;<br><br>
-										<audio controls>
-											<source src="songs/ti_me_koitas.mp3" type="audio/mpeg">
-											Ο Φυλλομετρητής σας δεν υποστηρίζει ηχητικά μηνύματα.
-										</audio>
+						<div class="flex-container hoverMe">
+							<div id="16" class="middle">
+								<div class="grid-cont">
+									<div class="item11">
+										<a href="https://open.spotify.com/artist/3R0jQDaLYWSGpsRc2aBkrj">
+											<picture>
+												<source media="(min-width: 768px)" srcset="albums/16.jpg">
+												<source media="(min-width: 320px)" srcset="albums/16_mobile.jpg">
+												<img src="albums/16.jpg" alt="16" class="MAX_responsive">
+											</picture>
+										</a>
+									</div>
+									<div class="item12">
+										<h3>16</h3>
+									</div>
+									<div class="item13">
+										<h4 class="nowrap">Καλλιτέχνης: Σπύρος Γραμμένος</h4>
+									</div>
+									<div class="item14">
+										<h4>Έτος: 2016</h4>
+									</div>
+									<div class="item15">
+										<h4>Τραγούδι: Τι Με Κοιτάς;<br><br>
+											<audio controls>
+												<source src="songs/ti_me_koitas.mp3" type="audio/mpeg">
+												Ο Φυλλομετρητής σας δεν υποστηρίζει ηχητικά μηνύματα.
+											</audio>
 
-									</h4>
+										</h4>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="flex-container hoverMe">
-						<div id="mikri_valitsa" class="middle">
-							<div class="grid-cont">
-								<div class="item11">
-									<a href="https://open.spotify.com/album/3hCJ5wChZnAJBPvOjeJu4q">
-										<picture>
-											<source media="(min-width: 768px)" srcset="albums/mikrh_valitsa.jpg">
-											<source media="(min-width: 320px)" srcset="albums/mikrh_valitsa_mobile.jpg">
-											<img src="albums/mikrh_valitsa.jpg" alt="Mikri Valitsa"
-												class="MAX_responsive">
-										</picture>
-									</a>
-								</div>
-								<div class="item12">
-									<h3>Μικρή Βαλίτσα</h3>
-								</div>
-								<div class="item13">
-									<h4 class="nowrap">Καλλιτέχνης: Αλκίνοος Ιωαννίδης</h4>
-								</div>
-								<div class="item14">
-									<h4>Έτος: 2014</h4>
-								</div>
-								<div class="item15">
-									<h4>Τραγούδι: Πάντα θα Ξημερώνει<br><br>
-										<audio controls>
-											<source src="songs/panta_tha_ksimeronei.mp3" type="audio/mpeg">
-											Ο Φυλλομετρητής σας δεν υποστηρίζει ηχητικά μηνύματα.
-										</audio>
+						<div class="flex-container hoverMe">
+							<div id="mikri_valitsa" class="middle">
+								<div class="grid-cont">
+									<div class="item11">
+										<a href="https://open.spotify.com/album/3hCJ5wChZnAJBPvOjeJu4q">
+											<picture>
+												<source media="(min-width: 768px)" srcset="albums/mikrh_valitsa.jpg">
+												<source media="(min-width: 320px)"
+													srcset="albums/mikrh_valitsa_mobile.jpg">
+												<img src="albums/mikrh_valitsa.jpg" alt="Mikri Valitsa"
+													class="MAX_responsive">
+											</picture>
+										</a>
+									</div>
+									<div class="item12">
+										<h3>Μικρή Βαλίτσα</h3>
+									</div>
+									<div class="item13">
+										<h4 class="nowrap">Καλλιτέχνης: Αλκίνοος Ιωαννίδης</h4>
+									</div>
+									<div class="item14">
+										<h4>Έτος: 2014</h4>
+									</div>
+									<div class="item15">
+										<h4>Τραγούδι: Πάντα θα Ξημερώνει<br><br>
+											<audio controls>
+												<source src="songs/panta_tha_ksimeronei.mp3" type="audio/mpeg">
+												Ο Φυλλομετρητής σας δεν υποστηρίζει ηχητικά μηνύματα.
+											</audio>
 
-									</h4>
+										</h4>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="flex-container hoverMe">
-						<div id="egine_i_apoleia" class="middle">
-							<div class="grid-cont">
-								<div class="item11">
-									<a href="https://open.spotify.com/album/5XeVWolB4chwKGc7owIEDq">
-										<picture>
-											<source media="(min-width: 768px)" srcset="albums/egine_i_apolia.jpg">
-											<source media="(min-width: 320px)"
-												srcset="albums/egine_i_apolia_mobile.jpg">
-											<img src="albums/egine_i_apolia.jpg" alt="Egine H Apoleia Synhtheia Mas"
-												class="MAX_responsive">
-										</picture>
-									</a>
-								</div>
-								<div class="item12">
-									<h3>Έγινε η Απώλεια Συνήθειά μας</h3>
-								</div>
-								<div class="item13">
-									<h4 class="nowrap">Καλλιτέχνης: Διάφανα Κρίνα</h4>
-								</div>
-								<div class="item14">
-									<h4>Έτος: 1996</h4>
-								</div>
-								<div class="item15">
-									<h4>Τραγούδι: Μέρες Αργίας<br><br>
-										<audio controls>
-											<source src="songs/meres_argias.mp3" type="audio/mpeg">
-											Ο Φυλλομετρητής σας δεν υποστηρίζει ηχητικά μηνύματα.
-										</audio>
+						<div class="flex-container hoverMe">
+							<div id="egine_i_apoleia" class="middle">
+								<div class="grid-cont">
+									<div class="item11">
+										<a href="https://open.spotify.com/album/5XeVWolB4chwKGc7owIEDq">
+											<picture>
+												<source media="(min-width: 768px)" srcset="albums/egine_i_apolia.jpg">
+												<source media="(min-width: 320px)"
+													srcset="albums/egine_i_apolia_mobile.jpg">
+												<img src="albums/egine_i_apolia.jpg" alt="Egine H Apoleia Synhtheia Mas"
+													class="MAX_responsive">
+											</picture>
+										</a>
+									</div>
+									<div class="item12">
+										<h3>Έγινε η Απώλεια Συνήθειά μας</h3>
+									</div>
+									<div class="item13">
+										<h4 class="nowrap">Καλλιτέχνης: Διάφανα Κρίνα</h4>
+									</div>
+									<div class="item14">
+										<h4>Έτος: 1996</h4>
+									</div>
+									<div class="item15">
+										<h4>Τραγούδι: Μέρες Αργίας<br><br>
+											<audio controls>
+												<source src="songs/meres_argias.mp3" type="audio/mpeg">
+												Ο Φυλλομετρητής σας δεν υποστηρίζει ηχητικά μηνύματα.
+											</audio>
 
-									</h4>
+										</h4>
+									</div>
 								</div>
 							</div>
 						</div>
+
 					</div>
 
+
+
+
+					<div class="middle">
+						<h2>Ξένοι</h2>
+
+						<div class="flex-container hoverMe">
+							<div id="continuum" class="middle">
+								<div class="grid-cont">
+									<div class="item11">
+										<a href="https://open.spotify.com/album/1Xsprdt1q9rOzTic7b9zYM">
+											<picture>
+												<source media="(min-width: 768px)" srcset="albums/continuum.jpg">
+												<source media="(min-width: 320px)" srcset="albums/continuum_mobile.jpg">
+												<img src="albums/continuum.jpg" alt="Continuum" class="MAX_responsive">
+											</picture>
+										</a>
+									</div>
+									<div class="item12">
+										<h3>Continuum</h3>
+									</div>
+									<div class="item13">
+										<h4 class="nowrap">Καλλιτέχνης: John Mayer</h4>
+									</div>
+									<div class="item14">
+										<h4>Έτος: 2006</h4>
+									</div>
+									<div class="item15">
+										<h4>Τραγούδι: Slow Dancing in a Burning Room<br><br>
+											<audio controls>
+												<source src="songs/slow_dancing.mp3" type="audio/mpeg">
+												Ο Φυλλομετρητής σας δεν υποστηρίζει ηχητικά μηνύματα.
+											</audio>
+
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="flex-container hoverMe">
+							<div id="plus" class="middle">
+								<div class="grid-cont">
+									<div class="item11">
+										<a href="https://open.spotify.com/album/02pi98kE0nra0yBqCStzbC">
+											<picture>
+												<source media="(min-width: 768px)" srcset="albums/plus.jpg">
+												<source media="(min-width: 320px)" srcset="albums/plus_mobile.jpg">
+												<img src="albums/plus.jpg" alt="Plus" class="MAX_responsive">
+											</picture>
+										</a>
+									</div>
+									<div class="item12">
+										<h3>+</h3>
+									</div>
+									<div class="item13">
+										<h4 class="nowrap">Καλλιτέχνης: Ed Sheeran</h4>
+									</div>
+									<div class="item14">
+										<h4>Έτος: 2011</h4>
+									</div>
+									<div class="item15">
+										<h4>Τραγούδι: Lego House (Acoustic)<br><br>
+											<audio controls>
+												<source src="songs/lego_house.mp3" type="audio/mpeg">
+												Ο Φυλλομετρητής σας δεν υποστηρίζει ηχητικά μηνύματα.
+											</audio>
+
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="flex-container hoverMe">
+							<div id="ram" class="middle">
+								<div class="grid-cont">
+									<div class="item11">
+										<a href="https://open.spotify.com/album/4m2880jivSbbyEGAKfITCa">
+											<picture>
+												<source media="(min-width: 768px)" srcset="albums/ram.jpg">
+												<source media="(min-width: 320px)" srcset="albums/ram_mobile.jpg">
+												<img src="albums/ram.jpg" alt="Random Access Memories"
+													class="MAX_responsive">
+											</picture>
+										</a>
+									</div>
+									<div class="item12">
+										<h3>Random Access Memories</h3>
+									</div>
+									<div class="item13">
+										<h4 class="nowrap">Καλλιτέχνης: Daft Punk</h4>
+									</div>
+									<div class="item14">
+										<h4>Έτος: 2013</h4>
+									</div>
+									<div class="item15">
+										<h4>Τραγούδι: Instant Crush<br><br>
+											<audio controls>
+												<source src="songs/instant_crush.mp3" type="audio/mpeg">
+												Ο Φυλλομετρητής σας δεν υποστηρίζει ηχητικά μηνύματα.
+											</audio>
+
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="flex-container hoverMe">
+							<div id="battle_studies" class="middle">
+								<div class="grid-cont">
+									<div class="item11">
+										<a href="https://open.spotify.com/album/1V5vQRMWTNGmqwxY8jMVou">
+											<picture>
+												<source media="(min-width: 768px)" srcset="albums/battle_studies.jpg">
+												<source media="(min-width: 320px)"
+													srcset="albums/battle_studies_mobile.jpg">
+												<img src="albums/battle_studies.jpg" alt="Battle Studies"
+													class="MAX_responsive">
+											</picture>
+										</a>
+									</div>
+									<div class="item12">
+										<h3>Battle Studies</h3>
+									</div>
+									<div class="item13">
+										<h4 class="nowrap">Καλλιτέχνης: John Mayer</h4>
+									</div>
+									<div class="item14">
+										<h4>Έτος: 2009</h4>
+									</div>
+									<div class="item15">
+										<h4>Τραγούδι: All We Ever Do Is Say Goodbye<br><br>
+											<audio controls>
+												<source src="songs/all_we_ever_do.mp3" type="audio/mpeg">
+												Ο Φυλλομετρητής σας δεν υποστηρίζει ηχητικά μηνύματα.
+											</audio>
+
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="flex-container hoverMe">
+							<div id="lioness" class="middle">
+								<div class="grid-cont">
+									<div class="item11">
+										<a href="https://open.spotify.com/album/1phOHhRWB28yRLxPbCqtrV">
+											<picture>
+												<source media="(min-width: 768px)" srcset="albums/lioness.jpg">
+												<source media="(min-width: 320px)" srcset="albums/lioness_mobile.jpg">
+												<img src="albums/battle_studies.jpg" alt="Lioness"
+													class="MAX_responsive">
+											</picture>
+										</a>
+									</div>
+									<div class="item12">
+										<h3>Lioness</h3>
+									</div>
+									<div class="item13">
+										<h4 class="nowrap">Καλλιτέχνης: Sivert Høyem</h4>
+									</div>
+									<div class="item14">
+										<h4>Έτος: 2016</h4>
+									</div>
+									<div class="item15">
+										<h4>Τραγούδι: Sleepwalking Man<br><br>
+											<audio controls>
+												<source src="songs/sleepwalking_man.mp3" type="audio/mpeg">
+												Ο Φυλλομετρητής σας δεν υποστηρίζει ηχητικά μηνύματα.
+											</audio>
+
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
 				</div>
-
-
-
-
-				<div class="middle">
-					<h2>Ξένοι</h2>
-
-					<div class="flex-container hoverMe">
-						<div id="continuum" class="middle">
-							<div class="grid-cont">
-								<div class="item11">
-									<a href="https://open.spotify.com/album/1Xsprdt1q9rOzTic7b9zYM">
-										<picture>
-											<source media="(min-width: 768px)" srcset="albums/continuum.jpg">
-											<source media="(min-width: 320px)" srcset="albums/continuum_mobile.jpg">
-											<img src="albums/continuum.jpg" alt="Continuum" class="MAX_responsive">
-										</picture>
-									</a>
-								</div>
-								<div class="item12">
-									<h3>Continuum</h3>
-								</div>
-								<div class="item13">
-									<h4 class="nowrap">Καλλιτέχνης: John Mayer</h4>
-								</div>
-								<div class="item14">
-									<h4>Έτος: 2006</h4>
-								</div>
-								<div class="item15">
-									<h4>Τραγούδι: Slow Dancing in a Burning Room<br><br>
-										<audio controls>
-											<source src="songs/slow_dancing.mp3" type="audio/mpeg">
-											Ο Φυλλομετρητής σας δεν υποστηρίζει ηχητικά μηνύματα.
-										</audio>
-
-									</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="flex-container hoverMe">
-						<div id="plus" class="middle">
-							<div class="grid-cont">
-								<div class="item11">
-									<a href="https://open.spotify.com/album/02pi98kE0nra0yBqCStzbC">
-										<picture>
-											<source media="(min-width: 768px)" srcset="albums/plus.jpg">
-											<source media="(min-width: 320px)" srcset="albums/plus_mobile.jpg">
-											<img src="albums/plus.jpg" alt="Plus" class="MAX_responsive">
-										</picture>
-									</a>
-								</div>
-								<div class="item12">
-									<h3>+</h3>
-								</div>
-								<div class="item13">
-									<h4 class="nowrap">Καλλιτέχνης: Ed Sheeran</h4>
-								</div>
-								<div class="item14">
-									<h4>Έτος: 2011</h4>
-								</div>
-								<div class="item15">
-									<h4>Τραγούδι: Lego House (Acoustic)<br><br>
-										<audio controls>
-											<source src="songs/lego_house.mp3" type="audio/mpeg">
-											Ο Φυλλομετρητής σας δεν υποστηρίζει ηχητικά μηνύματα.
-										</audio>
-
-									</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="flex-container hoverMe">
-						<div id="ram" class="middle">
-							<div class="grid-cont">
-								<div class="item11">
-									<a href="https://open.spotify.com/album/4m2880jivSbbyEGAKfITCa">
-										<picture>
-											<source media="(min-width: 768px)" srcset="albums/ram.jpg">
-											<source media="(min-width: 320px)" srcset="albums/ram_mobile.jpg">
-											<img src="albums/ram.jpg" alt="Random Access Memories"
-												class="MAX_responsive">
-										</picture>
-									</a>
-								</div>
-								<div class="item12">
-									<h3>Random Access Memories</h3>
-								</div>
-								<div class="item13">
-									<h4 class="nowrap">Καλλιτέχνης: Daft Punk</h4>
-								</div>
-								<div class="item14">
-									<h4>Έτος: 2013</h4>
-								</div>
-								<div class="item15">
-									<h4>Τραγούδι: Instant Crush<br><br>
-										<audio controls>
-											<source src="songs/instant_crush.mp3" type="audio/mpeg">
-											Ο Φυλλομετρητής σας δεν υποστηρίζει ηχητικά μηνύματα.
-										</audio>
-
-									</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="flex-container hoverMe">
-						<div id="battle_studies" class="middle">
-							<div class="grid-cont">
-								<div class="item11">
-									<a href="https://open.spotify.com/album/1V5vQRMWTNGmqwxY8jMVou">
-										<picture>
-											<source media="(min-width: 768px)" srcset="albums/battle_studies.jpg">
-											<source media="(min-width: 320px)"
-												srcset="albums/battle_studies_mobile.jpg">
-											<img src="albums/battle_studies.jpg" alt="Battle Studies"
-												class="MAX_responsive">
-										</picture>
-									</a>
-								</div>
-								<div class="item12">
-									<h3>Battle Studies</h3>
-								</div>
-								<div class="item13">
-									<h4 class="nowrap">Καλλιτέχνης: John Mayer</h4>
-								</div>
-								<div class="item14">
-									<h4>Έτος: 2009</h4>
-								</div>
-								<div class="item15">
-									<h4>Τραγούδι: All We Ever Do Is Say Goodbye<br><br>
-										<audio controls>
-											<source src="songs/all_we_ever_do.mp3" type="audio/mpeg">
-											Ο Φυλλομετρητής σας δεν υποστηρίζει ηχητικά μηνύματα.
-										</audio>
-
-									</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="flex-container hoverMe">
-						<div id="lioness" class="middle">
-							<div class="grid-cont">
-								<div class="item11">
-									<a href="https://open.spotify.com/album/1phOHhRWB28yRLxPbCqtrV">
-										<picture>
-											<source media="(min-width: 768px)" srcset="albums/lioness.jpg">
-											<source media="(min-width: 320px)" srcset="albums/lioness_mobile.jpg">
-											<img src="albums/battle_studies.jpg" alt="Lioness" class="MAX_responsive">
-										</picture>
-									</a>
-								</div>
-								<div class="item12">
-									<h3>Lioness</h3>
-								</div>
-								<div class="item13">
-									<h4 class="nowrap">Καλλιτέχνης: Sivert Høyem</h4>
-								</div>
-								<div class="item14">
-									<h4>Έτος: 2016</h4>
-								</div>
-								<div class="item15">
-									<h4>Τραγούδι: Sleepwalking Man<br><br>
-										<audio controls>
-											<source src="songs/sleepwalking_man.mp3" type="audio/mpeg">
-											Ο Φυλλομετρητής σας δεν υποστηρίζει ηχητικά μηνύματα.
-										</audio>
-
-									</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-				</div>
-
-			</div>
+			</main>
 		</div>
 
 		<div class="flex-container">
@@ -416,18 +422,17 @@
 						<div class="center">Αρχική</div>
 					</a></div>
 
-				<div class="p_menu"><a href="index.html">
+				<div id="indexP" class="p_menu"><a id="index" class="center" href="index.html">
 						<div class="center">Μουσική</div>
 					</a></div>
 
-				<div class="p_menu"><a class="center" href="albums.html">
+				<div id="indexAl" class="p_menu"><a id="albums" class="center" href="albums.html">
 						<div class="center">Άλμπουμ</div>
 					</a></div>
 
-				<div class="p_menu"><a class="center" href="artists.html">
+				<div id="indexAr" class="p_menu"><a id="artists" class="center" href="artists.html">
 						<div class="center">Καλλιτέχνες</div>
 					</a></div>
-
 
 			</div>
 		</div>
