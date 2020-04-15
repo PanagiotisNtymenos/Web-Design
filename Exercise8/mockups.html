@@ -17,7 +17,7 @@
 
 		img {
 			height: auto;
-			width: 50%;
+			width: 30%;
 		}
 
 		img:hover {
@@ -25,33 +25,33 @@
 			transition: 0.4s;
 		}
 
-		.container {
-			max-width: 50%;
+		.hov {
 			position: relative;
-			margin-left: 25%;
-			margin-right: 25%;
+			width: 100%;
+			align-content: center;
 		}
 
 		.overlay {
 			position: absolute;
 			bottom: 0;
-			margin-left: 25%;
-			margin-right: 25%;
+			margin-left: 35%;
+			margin-right: 35%;
+			width: 30%;
+			transform: translate(-50%, -50%);
 			background: rgb(0, 0, 0);
 			background: rgba(0, 0, 0, 0.5);
 			/* Black see-through */
 			color: #f1f1f1;
-			width: 48%;
 			transition: .2s ease;
 			opacity: 0;
 			color: white;
 			font-size: 20px;
-			padding: 10px;
-			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
 			font-family: CaviarDreams;
 		}
 
-		.container:hover .overlay {
+		.hov:hover .overlay {
 			opacity: 1;
 			transform: scale(1.05);
 			transition: 0.4s;
@@ -63,21 +63,21 @@
 	<div style="text-align: center;">
 
 		<h1>Music</h1>
-		<div class="container" style="text-align: center;">
+		<div class="hov" style="text-align: center;">
 			<a href="mockup/mockup.jpg"><img id="Mockup1" src="mockup/mockup.png" alt="Index"></a>
 			<div class="overlay">Select Image for Fullscreen</div>
 		</div>
 		<hr>
 
 		<h1>Artists</h1>
-		<div class="container">
+		<div class="hov" style="text-align: center;">
 			<a href="mockup/mockup_2.jpg"><img id="Mockup2" src="mockup/mockup_2.png" alt="Artists"></a>
 			<div class="overlay">Select Image for Fullscreen</div>
 		</div>
 		<hr>
 
 		<h1>Albums</h1>
-		<div class="container" style="border-color:brown">
+		<div class="hov" style="text-align: center;">
 			<a href="mockup/mockup_3.jpg"><img id="Mockup3" src="mockup/mockup_3.png" alt="Albums"></a>
 			<div class="overlay">Select Image for Fullscreen</div>
 		</div>
