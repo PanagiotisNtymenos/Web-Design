@@ -268,6 +268,11 @@ a:hover {
 	height:auto;
 }
 
+#sumUp {
+	margin-left: 30%; 
+	margin-right: 30%;
+}
+
 
 @media only screen and (max-width: 768px) {
 	/* For mobile phones: */
@@ -318,6 +323,11 @@ a:hover {
 
 	.img-container {
 		max-width: 100%;
+	}
+
+	#sumUp {
+		margin-left: 10%; 
+		margin-right: 10%;
 	}
 }
 

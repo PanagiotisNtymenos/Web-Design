@@ -11,7 +11,17 @@
 			src: url(fonts/Caviar-Dreams/CaviarDreams.ttf);
 		}
 
-		h1 {
+		h1, p {
+			font-family: CaviarDreams;
+		}
+
+		a:hover {
+			color: #cc0000;
+		}
+
+		a {
+			text-decoration: none;
+			color: #931f1f;
 			font-family: CaviarDreams;
 		}
 
@@ -28,7 +38,6 @@
 		.hov {
 			position: relative;
 			width: 100%;
-			align-content: center;
 		}
 
 		.overlay {
@@ -40,6 +49,7 @@
 			transform: translate(-50%, -50%);
 			background: rgb(0, 0, 0);
 			background: rgba(0, 0, 0, 0.5);
+			background-image: linear-gradient(to bottom left, rgba(0, 0, 0, 0.1) 50%, white);
 			/* Black see-through */
 			color: #f1f1f1;
 			transition: .2s ease;
@@ -51,7 +61,19 @@
 			font-family: CaviarDreams;
 		}
 
-		.hov:hover .overlay {
+		a:hover+#ov1 {
+			opacity: 1;
+			transform: scale(1.05);
+			transition: 0.4s;
+		}
+
+		a:hover+#ov2 {
+			opacity: 1;
+			transform: scale(1.05);
+			transition: 0.4s;
+		}
+
+		a:hover+#ov3 {
 			opacity: 1;
 			transform: scale(1.05);
 			transition: 0.4s;
@@ -61,28 +83,40 @@
 
 <body>
 	<div style="text-align: center;">
-
+		<div>
+			<h1>Περιγραφή</h1>
+			<p style="margin-left: 20%;margin-right: 20%;">
+				Ο Ιστότοπός μου αποτελείται από τρεις σελίδες και έχει ως θέμα την μουσική. Στην πρώτη σελίδα (<a
+					href="index.html">Μουσική</a>) αναλύω το τι είναι μουσική για εμένα και το πως με έχει επηρεάσει
+				στην καθημερινή μου ζωή. Αποτελείται από ένα πρωτότυπο κείμενο και ένα Slideshow φωτογραφιών. Στην
+				δεύτερη σελίδα (<a href="album.html">Άλμπουμ</a>) αναφέρω μερικούς από τους δίσκους που μου αρέσουν και
+				λίγες πληροφορίες για αυτούς. Στην τρίτη σελίδα (<a href="artists.html">Καλλιτέχνες</a>) αναφέρω
+				μερικούς καλλιτέχνες που μου αρέσουν και θεωρώ πως είναι άξιοι σημείωσης. Σε κάθε σελίδα υπάρχει η
+				επιλογή αλλαγής μεγέθους γραμματοσειράς, η εμφάνιση της ώρας live και η πλοήγηση μεταξύ των σελίδων μέσω
+				μενού.
+		</div>
+		<hr>
 		<h1>Music</h1>
-		<div class="hov" style="text-align: center;">
+		<div class="hov">
 			<a href="mockup/mockup.jpg"><img id="Mockup1" src="mockup/mockup.png" alt="Index"></a>
-			<div class="overlay">Select Image for Fullscreen</div>
+			<div id="ov1" class="overlay">Select Image for Fullscreen</div>
 		</div>
 		<hr>
 
 		<h1>Artists</h1>
-		<div class="hov" style="text-align: center;">
+		<div class="hov">
 			<a href="mockup/mockup_2.jpg"><img id="Mockup2" src="mockup/mockup_2.png" alt="Artists"></a>
-			<div class="overlay">Select Image for Fullscreen</div>
+			<div id="ov2" class="overlay">Select Image for Fullscreen</div>
 		</div>
 		<hr>
 
 		<h1>Albums</h1>
-		<div class="hov" style="text-align: center;">
+		<div class="hov">
 			<a href="mockup/mockup_3.jpg"><img id="Mockup3" src="mockup/mockup_3.png" alt="Albums"></a>
-			<div class="overlay">Select Image for Fullscreen</div>
+			<div id="ov3" class="overlay">Select Image for Fullscreen</div>
 		</div>
-
 	</div>
+
 </body>
 
 </html>
